@@ -72,12 +72,15 @@ h2 {
 }
 
 .video-wrapper iframe {
-	width: 100%;
-    max-width: 1920px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 1080px; /* 设置最大宽度 */
+    aspect-ratio: 16 / 9; /* 始终保持16:9比例 */
+    border-radius: 10px; /* 添加圆角 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 添加阴影 */
+    border: none; /* 去掉边框 */
 }
+
+
 
 /* Code Section */
 #project-code {
