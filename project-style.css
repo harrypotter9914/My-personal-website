@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo {
+    margin: 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 50px 0;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.image-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.image-gallery img {
+    width: 100%;
+    max-width: 1920px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.video-wrapper {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.video-wrapper iframe {
+    max-width: 100%;
+    max-width: 960px;
+    height: 540px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Code Section */
+#project-code {
+    text-align: center; /* 代码部分居中 */
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f9f9f9; /* 浅灰色背景 */
+    border-top: 1px solid #ddd; /* 分割线 */
+}
+
+#project-code h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+#project-code p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+#project-code img {
+    display: block;
+    margin: 0 auto 15px; /* 图片居中并添加间距 */
+    width: 150px;
+    height: auto;
+    border-radius: 10px; /* 圆角效果 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 添加阴影 */
+}
+
+#project-code a {
+    color: #007BFF; /* 链接颜色 */
+    text-decoration: none; /* 去掉下划线 */
+    font-weight: bold;
+}
+
+#project-code a:hover {
+    color: #0056b3; /* 鼠标悬停时颜色变深 */
+    text-decoration: underline; /* 鼠标悬停时显示下划线 */
+}
+
+/* Back to Top Button */
+#back-to-top {
+    position: fixed;
+    bottom: 30px; /* 距离底部30px */
+    right: 30px; /* 距离右边30px */
+    display: none; /* 默认隐藏 */
+    z-index: 1000; /* 保证按钮在最上层 */
+}
+
+#back-to-top button {
+    background-color: #007BFF; /* 按钮背景颜色 */
+    color: white; /* 按钮文字颜色 */
+    border: none; /* 去掉边框 */
+    border-radius: 50%; /* 圆形按钮 */
+    width: 70px; /* 按钮宽度 */
+    height: 70px; /* 按钮高度 */
+    font-size: 20px; /* 文字大小 */
+    cursor: pointer; /* 鼠标指针变为手型 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 添加阴影 */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* 动画效果 */
+}
+
+#back-to-top button:hover {
+    background-color: #0056b3; /* 鼠标悬停时背景颜色 */
+    transform: scale(1.1); /* 鼠标悬停时放大 */
+}
+
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}

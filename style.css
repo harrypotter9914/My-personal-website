@@ -1,0 +1,224 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo {
+    margin: 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 50px 0;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.intro {
+    text-align: center; /* About Me 居中 */
+}
+
+.intro img {
+    width: 150px; /* 照片宽度 */
+    height: 150px; /* 照片高度 */
+    border-radius: 50%; /* 圆形框框 */
+    object-fit: cover; /* 保持图片比例 */
+    margin: 20px auto; /* 上下间距且居中 */
+    display: block; /* 图片块级显示 */
+}
+
+.intro p {
+    text-align: center; /* 文字居中 */
+    font-size: 16px; /* 字体大小 */
+    line-height: 1.6; /* 行间距 */
+    margin-top: 10px; /* 增加文字与图片的间距 */
+}
+
+.portfolio-items {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.portfolio-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.portfolio-item h3 {
+    margin: 15px 0 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background: #333;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: auto;
+    align-self: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background: #555;
+    transform: scale(1.05);
+}
+
+/* Tabs Container */
+.tabs {
+    display: flex;
+    justify-content: center; /* 居中 Tabs 按钮 */
+    margin: 20px 0;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.tab-button:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+.tab-button.active {
+    background-color: #007BFF;
+    color: white;
+}
+
+/* Project Content Centering */
+.projects {
+    text-align: center; /* 项目内容居中 */
+}
+
+.projects .tab-content {
+    margin-top: 20px;
+    text-align: center; /* 子内容居中 */
+    font-size: 16px;
+}
+
+/* Contact Section */
+.contact {
+    text-align: center; /* Contact 部分居中 */
+    margin: 0 auto; /* 容器居中 */
+}
+
+.contact ul {
+    list-style: none; /* 去掉列表样式 */
+    padding: 0;
+    margin-top: 10px;
+}
+
+.contact ul li {
+    margin-bottom: 10px; /* 每个列表项的间距 */
+    font-size: 16px;
+}
+
+.contact a {
+    text-decoration: none; /* 去掉链接下划线 */
+    color: #007BFF; /* 默认链接颜色 */
+    font-weight: bold; /* 加粗 */
+}
+
+.contact a:hover {
+    text-decoration: underline; /* 悬停时显示下划线 */
+    color: #0056b3; /* 悬停时链接颜色 */
+}
+
+/* Back to Top Button */
+#back-to-top {
+    position: fixed;
+    bottom: 30px; /* 距离底部30px */
+    right: 30px; /* 距离右边30px */
+    display: none; /* 默认隐藏 */
+    z-index: 1000; /* 保证按钮在最上层 */
+}
+
+#back-to-top button {
+    background-color: #007BFF; /* 按钮背景颜色 */
+    color: white; /* 按钮文字颜色 */
+    border: none; /* 去掉边框 */
+    border-radius: 50%; /* 圆形按钮 */
+    width: 70px; /* 按钮宽度 */
+    height: 70px; /* 按钮高度 */
+    font-size: 20px; /* 文字大小 */
+    cursor: pointer; /* 鼠标指针变为手型 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 添加阴影 */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* 动画效果 */
+}
+
+#back-to-top button:hover {
+    background-color: #0056b3; /* 鼠标悬停时背景颜色 */
+    transform: scale(1.1); /* 鼠标悬停时放大 */
+}
+
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}

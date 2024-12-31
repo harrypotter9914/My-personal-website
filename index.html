@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <div class="container">
+            <h1 class="logo">Welcome to My Personal Website</h1>
+            <nav>
+                <ul>
+                    <li><a href="#intro">About Me</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="intro" class="section intro">
+        <div class="container">
+            <h2>About Me</h2>
+            <img src="images/your-photo.jpg" alt="Profile Photo" class="profile-photo">
+            <p>Hi there! I’m Yibo Wang, a passionate student with a strong interest in [Your Interests]. I specialize in creating innovative solutions and exploring new ideas in [Your Expertise].</p>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section portfolio">
+        <div class="container">
+            <h2>My Portfolio</h2>
+            <div class="portfolio-items">
+                <!-- Project 1 -->
+                <div class="portfolio-item">
+                    <img src="images/project1.png" alt="Project 1">
+                    <h3>Fit to Pass</h3>
+                    <p>As an overworked office worker neglecting your health, you are abducted by a mysterious organization and turned into a prototype with the power to manipulate your body’s size and shape. To escape, you must master these abilities, navigate through challenging levels, and overcome obstacles, learning the importance of physical well-being along the way.</p>
+                    <a href="project1.html" class="btn">Learn More</a>
+                </div>
+                <!-- Project 2 -->
+                <div class="portfolio-item">
+                    <img src="images/project2.png" alt="Project 2">
+                    <h3>Bable</h3>
+                    <p>"Babel" is a 2D action-adventure game set in the mid-15th century in the Kingdom of Sicily. Amid the Black Death and famine, players explore the legendary Tower of Babel, battling enemies and uncovering mysteries of faith, power, and human ambition. The game combines Metroidvania mechanics with deep narrative elements, allowing players to unlock abilities like Shockwave, Wall Jump, and Crystal Dash to progress through complex levels and face tough bosses.</p>
+                    <a href="project2.html" class="btn">Learn More</a>
+                </div>
+                <!-- Project 3 -->
+                <div class="portfolio-item">
+                    <img src="images/project3.png" alt="Project 3">
+                    <h3>Echo of Crash</h3>
+                    <p>On a peaceful morning, a family sets out for a drive, but their journey is interrupted by multiple accidents caused by careless drivers. The driver has a unique gift: in the moment of impact, he can shift the accident into a timeless space, becoming a spirit who can freely investigate the scene. He must uncover the truth behind each crash, helping others realize their mistakes and gradually restoring safety to the roads.</p>
+                    <a href="project3.html" class="btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="tabs">
+                <button class="tab-button active" data-target="game-projects">Game Projects</button>
+                <button class="tab-button" data-target="software-projects">Software Projects</button>
+                <button class="tab-button" data-target="photography-projects">Photography Projects</button>
+            </div>
+            <div class="tab-content" id="game-projects">
+                <h3>Game Projects</h3>
+                <p>Here are the game projects I have worked on...</p>
+                <!-- Specific game projects here -->
+            </div>
+            <div class="tab-content" id="software-projects" style="display:none;">
+                <h3>Software Projects</h3>
+                <p>Here are the software projects I have worked on...</p>
+                <!-- Specific software projects here -->
+            </div>
+            <div class="tab-content" id="photography-projects" style="display:none;">
+                <h3>Photography Projects</h3>
+                <p>Here are the photography projects I have worked on...</p>
+                <!-- Specific photography projects here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>If you have any questions or would like to collaborate, feel free to reach out!</p>
+            <ul>
+                <li>Email: jasonwang792@gmail.com</li>
+				<li>Phone Number: +8613681012656</li>
+                <li>GitHub: <a href="https://github.com/harrypotter9914">Link</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <div id="back-to-top">
+        <button>&uarr; Top</button>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
