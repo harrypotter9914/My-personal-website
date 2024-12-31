@@ -72,9 +72,9 @@ h2 {
 }
 
 .video-wrapper iframe {
-    max-width: 100%;
-    max-width: 960px;
-    height: 540px;
+	width: 100%;
+    max-width: 1920px;
+    height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
