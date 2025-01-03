@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
+    <title>Personal Website</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -27,7 +27,7 @@
         <div class="container">
             <h2>About Me</h2>
             <img src="images/your-photo.jpg" alt="Profile Photo" class="profile-photo">
-            <p>Hi there! I’m Yibo Wang, a passionate student with a strong interest in [Your Interests]. I specialize in creating innovative solutions and exploring new ideas in [Your Expertise].</p>
+            <p>Hi there! I’m Yibo Wang, a passionate game designer with a strong interest in creating immersive and engaging experiences. I specialize in designing unique game mechanics, developing interactive gameplay systems, and crafting compelling narratives for video games.</p>
         </div>
     </section>
 
@@ -35,18 +35,23 @@
     <section id="portfolio" class="section portfolio">
         <div class="container">
             <h2>My Portfolio</h2>
+			<p style="color: red; font-size: 14px; text-align: center; margin-top: -10px;">
+			    The art assets in these games were not created by me. However, all other design and programming, including but not limited to UI layout, element placement, level design, character design, and functional logic, were fully completed by me.
+			</p>
             <div class="portfolio-items">
                 <!-- Project 1 -->
                 <div class="portfolio-item">
                     <img src="images/project1.png" alt="Project 1">
                     <h3>Fit to Pass</h3>
+					<p style="font-style: italic; font-size: 14px; margin: -10px 0 10px;">Built with Unity</p>
                     <p>As an overworked office worker neglecting your health, you are abducted by a mysterious organization and turned into a prototype with the power to manipulate your body’s size and shape. To escape, you must master these abilities, navigate through challenging levels, and overcome obstacles, learning the importance of physical well-being along the way.</p>
                     <a href="project1.html" class="btn">Learn More</a>
                 </div>
                 <!-- Project 2 -->
                 <div class="portfolio-item">
                     <img src="images/project2.png" alt="Project 2">
-                    <h3>Bable</h3>
+                    <h3>Babel</h3>
+					<p style="font-style: italic; font-size: 14px; margin: -10px 0 10px;">Built with a custom game engine</p>
                     <p>"Babel" is a 2D action-adventure game set in the mid-15th century in the Kingdom of Sicily. Amid the Black Death and famine, players explore the legendary Tower of Babel, battling enemies and uncovering mysteries of faith, power, and human ambition. The game combines Metroidvania mechanics with deep narrative elements, allowing players to unlock abilities like Shockwave, Wall Jump, and Crystal Dash to progress through complex levels and face tough bosses.</p>
                     <a href="project2.html" class="btn">Learn More</a>
                 </div>
@@ -54,6 +59,7 @@
                 <div class="portfolio-item">
                     <img src="images/project3.png" alt="Project 3">
                     <h3>Echo of Crash</h3>
+					<p style="font-style: italic; font-size: 14px; margin: -10px 0 10px;">Built with Unreal Engine</p>
                     <p>On a peaceful morning, a family sets out for a drive, but their journey is interrupted by multiple accidents caused by careless drivers. The driver has a unique gift: in the moment of impact, he can shift the accident into a timeless space, becoming a spirit who can freely investigate the scene. He must uncover the truth behind each crash, helping others realize their mistakes and gradually restoring safety to the roads.</p>
                     <a href="project3.html" class="btn">Learn More</a>
                 </div>
@@ -61,32 +67,131 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section projects">
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="tabs">
-                <button class="tab-button active" data-target="game-projects">Game Projects</button>
-                <button class="tab-button" data-target="software-projects">Software Projects</button>
-                <button class="tab-button" data-target="photography-projects">Photography Projects</button>
-            </div>
-            <div class="tab-content" id="game-projects">
-                <h3>Game Projects</h3>
-                <p>Here are the game projects I have worked on...</p>
-                <!-- Specific game projects here -->
-            </div>
-            <div class="tab-content" id="software-projects" style="display:none;">
-                <h3>Software Projects</h3>
-                <p>Here are the software projects I have worked on...</p>
-                <!-- Specific software projects here -->
-            </div>
-            <div class="tab-content" id="photography-projects" style="display:none;">
-                <h3>Photography Projects</h3>
-                <p>Here are the photography projects I have worked on...</p>
-                <!-- Specific photography projects here -->
+<!-- Projects Section -->
+<section id="projects" class="section projects">
+    <div class="container">
+        <h2>Projects</h2>
+        <div class="tabs">
+            <button class="tab-button active" data-target="game-projects">Game Projects</button>
+            <button class="tab-button" data-target="software-projects">Software Projects</button>
+            <button class="tab-button" data-target="photography-projects">Photography Projects</button>
+            <button class="tab-button" data-target="video-projects">Video Projects</button>
+        </div>
+
+        <!-- Game Projects -->
+        <div class="tab-content" id="game-projects">
+            <h3>Game Projects</h3>
+            <div class="portfolio-items">
+                <!-- Game Project 1 -->
+                <div class="portfolio-item">
+                    <img src="images/game-project1.png" alt="Game Project 1">
+                    <h3>Game Project 1</h3>
+                    <p>Description of Game Project 1...</p>
+                    <a href="game-project1.html" class="btn">Learn More</a>
+                </div>
+                <!-- Game Project 2 -->
+                <div class="portfolio-item">
+                    <img src="images/game-project2.png" alt="Game Project 2">
+                    <h3>Game Project 2</h3>
+                    <p>Description of Game Project 2...</p>
+                    <a href="game-project2.html" class="btn">Learn More</a>
+                </div>
+                <!-- Game Project 3 -->
+                <div class="portfolio-item">
+                    <img src="images/game-project3.png" alt="Game Project 3">
+                    <h3>Game Project 3</h3>
+                    <p>Description of Game Project 3...</p>
+                    <a href="game-project3.html" class="btn">Learn More</a>
+                </div>
             </div>
         </div>
-    </section>
+
+        <!-- Software Projects -->
+        <div class="tab-content" id="software-projects" style="display:none;">
+            <h3>Software Projects</h3>
+            <div class="portfolio-items">
+                <!-- Software Project 1 -->
+                <div class="portfolio-item">
+                    <img src="images/software-project1.png" alt="Software Project 1">
+                    <h3>Software Project 1</h3>
+                    <p>Description of Software Project 1...</p>
+                    <a href="software-project1.html" class="btn">Learn More</a>
+                </div>
+                <!-- Software Project 2 -->
+                <div class="portfolio-item">
+                    <img src="images/software-project2.png" alt="Software Project 2">
+                    <h3>Software Project 2</h3>
+                    <p>Description of Software Project 2...</p>
+                    <a href="software-project2.html" class="btn">Learn More</a>
+                </div>
+                <!-- Software Project 3 -->
+                <div class="portfolio-item">
+                    <img src="images/software-project3.png" alt="Software Project 3">
+                    <h3>Software Project 3</h3>
+                    <p>Description of Software Project 3...</p>
+                    <a href="software-project3.html" class="btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Photography Projects -->
+        <div class="tab-content" id="photography-projects" style="display:none;">
+            <h3>Photography Projects</h3>
+            <div class="portfolio-items">
+                <!-- Photography Project 1 -->
+                <div class="portfolio-item">
+                    <img src="images/photography-project1.png" alt="Photography Project 1">
+                    <h3>Photography Project 1</h3>
+                    <p>Description of Photography Project 1...</p>
+                    <a href="photography-project1.html" class="btn">Learn More</a>
+                </div>
+                <!-- Photography Project 2 -->
+                <div class="portfolio-item">
+                    <img src="images/photography-project2.png" alt="Photography Project 2">
+                    <h3>Photography Project 2</h3>
+                    <p>Description of Photography Project 2...</p>
+                    <a href="photography-project2.html" class="btn">Learn More</a>
+                </div>
+                <!-- Photography Project 3 -->
+                <div class="portfolio-item">
+                    <img src="images/photography-project3.png" alt="Photography Project 3">
+                    <h3>Photography Project 3</h3>
+                    <p>Description of Photography Project 3...</p>
+                    <a href="photography-project3.html" class="btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Video Projects -->
+        <div class="tab-content" id="video-projects" style="display:none;">
+            <h3>Video Projects</h3>
+            <div class="portfolio-items">
+                <!-- Video Project 1 -->
+                <div class="portfolio-item">
+                    <img src="images/video-project1.png" alt="Video Project 1">
+                    <h3>Video Project 1</h3>
+                    <p>Description of Video Project 1...</p>
+                    <a href="video-project1.html" class="btn">Learn More</a>
+                </div>
+                <!-- Video Project 2 -->
+                <div class="portfolio-item">
+                    <img src="images/video-project2.png" alt="Video Project 2">
+                    <h3>Video Project 2</h3>
+                    <p>Description of Video Project 2...</p>
+                    <a href="video-project2.html" class="btn">Learn More</a>
+                </div>
+                <!-- Video Project 3 -->
+                <div class="portfolio-item">
+                    <img src="images/video-project3.png" alt="Video Project 3">
+                    <h3>Video Project 3</h3>
+                    <p>Description of Video Project 3...</p>
+                    <a href="video-project3.html" class="btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 
     <!-- Contact Section -->
     <section id="contact" class="section contact">
