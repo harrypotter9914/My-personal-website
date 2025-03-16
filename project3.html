@@ -33,11 +33,11 @@
         <div class="container">
             <h2>Project Images</h2>
             <div class="image-gallery">
-                <img src="images/project3-img1.png" alt="Image 1">
-                <img src="images/project3-img2.png" alt="Image 2">
-                <img src="images/project3-img3.png" alt="Image 3">
-                <img src="images/project3-img4.png" alt="Image 4">
-                <img src="images/project3-img5.png" alt="Image 5">
+                <img src="images/project3-img1.png" alt="Image 1" onclick="openModal(this)">
+                <img src="images/project3-img2.png" alt="Image 2" onclick="openModal(this)">
+                <img src="images/project3-img3.png" alt="Image 3" onclick="openModal(this)">
+                <img src="images/project3-img4.png" alt="Image 4" onclick="openModal(this)">
+                <img src="images/project3-img5.png" alt="Image 5" onclick="openModal(this)">
             </div>
         </div>
     </section>
@@ -80,7 +80,13 @@
             <p>&copy; 2024 [Yibo Wang]. All rights reserved.</p>
         </div>
     </footer>
-	
+	<!-- Fullscreen Image Modal -->
+	<div id="imageModal" class="modal">
+	    <span class="close" onclick="closeModal()">&times;</span>
+	    <div id="imageContainer">
+	        <img class="modal-content" id="modalImage">
+	    </div>
+	</div>
 	<script src="script.js"></script>
 </body>
 </html>

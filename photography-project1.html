@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Photography Project 1 - Details</title>
+    <title>Camera Photography - Details</title>
     <link rel="stylesheet" href="project-style.css">
 	<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-P1YFTKP2V9"></script>
@@ -19,7 +19,7 @@
     <!-- Header Section -->
     <header>
         <div class="container">
-            <h1 class="logo">Echo of Crash - Details</h1>
+            <h1 class="logo">Camera Photography - Details</h1>
             <nav>
                 <ul>
                     <li><a href="index.html">Back to Home</a></li>
@@ -33,13 +33,15 @@
         <div class="container">
             <h2>Project Images</h2>
             <div class="image-gallery">
-                <img src="images/photography-project1-img1.jpg" alt="Image 1">
-                <img src="images/photography-project1-img2.jpg" alt="Image 2">
-                <img src="images/photography-project1-img3.jpg" alt="Image 3">
-                <img src="images/photography-project1-img4.jpg" alt="Image 4">
-                <img src="images/photography-project1-img5.jpg" alt="Image 5">
-                <img src="images/photography-project1-img6.jpg" alt="Image 6">
-                <img src="images/photography-project1-img7.jpg" alt="Image 7">
+                <img src="images/photography-project1-img1.jpg" alt="Image 1" onclick="openModal(this)">
+                <img src="images/photography-project1-img2.jpg" alt="Image 2" onclick="openModal(this)">
+                <img src="images/photography-project1-img3.jpg" alt="Image 3" onclick="openModal(this)">
+                <img src="images/photography-project1-img4.jpg" alt="Image 4" onclick="openModal(this)">
+                <img src="images/photography-project1-img5.jpg" alt="Image 5" onclick="openModal(this)">
+                <img src="images/photography-project1-img6.jpg" alt="Image 6" onclick="openModal(this)">
+                <img src="images/photography-project1-img7.jpg" alt="Image 7" onclick="openModal(this)">
+				<img src="images/photography-project1-img8.jpg" alt="Image 8" onclick="openModal(this)">
+				<img src="images/photography-project1-img9.jpg" alt="Image 9" onclick="openModal(this)">
             </div>
         </div>
     </section>
@@ -55,7 +57,13 @@
             <p>&copy; 2024 [Yibo Wang]. All rights reserved.</p>
         </div>
     </footer>
-	
+	<!-- Fullscreen Image Modal -->
+	<div id="imageModal" class="modal">
+	    <span class="close" onclick="closeModal()">&times;</span>
+	    <div id="imageContainer">
+	        <img class="modal-content" id="modalImage">
+	    </div>
+	</div>
 	<script src="script.js"></script>
 </body>
 </html>

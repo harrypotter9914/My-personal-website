@@ -49,9 +49,9 @@
         <div class="container">
             <h2>Project Images</h2>
             <div class="image-gallery">
-                <img src="images/software-project2-img1.png" alt="Image 1">
-                <img src="images/software-project2-img2.png" alt="Image 2">
-                <img src="images/software-project2-img3.png" alt="Image 3">
+                <img src="images/software-project2-img1.png" alt="Image 1" onclick="openModal(this)">
+                <img src="images/software-project2-img2.png" alt="Image 2" onclick="openModal(this)">
+                <img src="images/software-project2-img3.png" alt="Image 3" onclick="openModal(this)">
             </div>
         </div>
     </section>
@@ -73,7 +73,13 @@
     <div id="back-to-top">
         <button>&uarr; Top</button>
     </div>
-	
+	<!-- Fullscreen Image Modal -->
+	<div id="imageModal" class="modal">
+	    <span class="close" onclick="closeModal()">&times;</span>
+	    <div id="imageContainer">
+	        <img class="modal-content" id="modalImage">
+	    </div>
+	</div>
     <footer>
         <div class="container">
             <p>&copy; 2024 [Yibo Wang]. All rights reserved.</p>

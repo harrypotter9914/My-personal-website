@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photography Project 3 - Details</title>
     <link rel="stylesheet" href="project-style.css">
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-P1YFTKP2V9"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	
+	  gtag('config', 'G-P1YFTKP2V9');
 </head>
 <body>
     <!-- Header Section -->
@@ -24,13 +32,13 @@
         <div class="container">
             <h2>Project Images</h2>
             <div class="image-gallery">
-                <img src="images/project3-img1.jpg" alt="Image 1">
-                <img src="images/project3-img2.jpg" alt="Image 2">
-                <img src="images/project3-img3.jpg" alt="Image 3">
-                <img src="images/project3-img4.jpg" alt="Image 4">
-                <img src="images/project3-img5.jpg" alt="Image 5">
-                <img src="images/project3-img6.jpg" alt="Image 6">
-                <img src="images/project3-img7.jpg" alt="Image 7">
+                <img src="images/project3-img1.jpg" alt="Image 1" onclick="openModal(this)">
+                <img src="images/project3-img2.jpg" alt="Image 2" onclick="openModal(this)">
+                <img src="images/project3-img3.jpg" alt="Image 3" onclick="openModal(this)">
+                <img src="images/project3-img4.jpg" alt="Image 4" onclick="openModal(this)">
+                <img src="images/project3-img5.jpg" alt="Image 5" onclick="openModal(this)">
+                <img src="images/project3-img6.jpg" alt="Image 6" onclick="openModal(this)">
+                <img src="images/project3-img7.jpg" alt="Image 7" onclick="openModal(this)">
             </div>
         </div>
     </section>
@@ -45,7 +53,13 @@
             <p>&copy; 2024 [Yibo Wang]. All rights reserved.</p>
         </div>
     </footer>
-	
+	<!-- Fullscreen Image Modal -->
+	<div id="imageModal" class="modal">
+	    <span class="close" onclick="closeModal()">&times;</span>
+	    <div id="imageContainer">
+	        <img class="modal-content" id="modalImage">
+	    </div>
+	</div>
 	<script src="script.js"></script>
 </body>
 </html>
