@@ -15,7 +15,7 @@
     --radius-lg: 24px;
     --radius-md: 18px;
     --radius-sm: 12px;
-    --max-width: 1200px;
+    --max-width: 1380px;
 }
 
 *,
@@ -105,9 +105,18 @@ header .container {
 .logo {
     margin: 0;
     font-family: "Bricolage Grotesque", "Space Grotesk", sans-serif;
-    font-size: clamp(1.4rem, 3vw, 2.25rem);
+    font-size: clamp(1.1rem, 2vw, 1.45rem);
     line-height: 0.95;
-    letter-spacing: -0.05em;
+    letter-spacing: -0.03em;
+}
+
+.header-project-label {
+    margin: 0.2rem 0 0;
+    color: var(--muted);
+    font-size: 0.76rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
 }
 
 nav ul {
@@ -157,7 +166,7 @@ nav a:focus-visible {
 
 .project-hero-card {
     display: grid;
-    grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.8fr);
+    grid-template-columns: minmax(0, 1.45fr) minmax(260px, 0.7fr);
     gap: 1.4rem;
     padding: clamp(1.5rem, 4vw, 2.3rem);
     border-radius: var(--radius-xl);
@@ -185,16 +194,31 @@ nav a:focus-visible {
 .project-hero h1 {
     margin: 0;
     font-family: "Bricolage Grotesque", "Space Grotesk", sans-serif;
-    font-size: clamp(2.8rem, 6vw, 5.4rem);
-    line-height: 0.92;
+    max-width: 18ch;
+    font-size: clamp(2.6rem, 4.8vw, 4.9rem);
+    line-height: 0.94;
     letter-spacing: -0.06em;
+    text-wrap: balance;
 }
 
 .project-summary {
-    max-width: 40rem;
+    max-width: 48rem;
     margin: 1.1rem 0 0;
     color: var(--muted);
     font-size: clamp(1.02rem, 1.6vw, 1.12rem);
+}
+
+.project-title-long .project-hero h1 {
+    max-width: 20ch;
+    font-size: clamp(2.2rem, 4.1vw, 4rem);
+    line-height: 0.96;
+}
+
+.project-title-very-long .project-hero h1 {
+    max-width: 24ch;
+    font-size: clamp(1.95rem, 3.4vw, 3.2rem);
+    line-height: 1;
+    letter-spacing: -0.045em;
 }
 
 .project-tag-row,
@@ -610,6 +634,12 @@ footer {
 
     .photo-gallery {
         column-count: 1;
+    }
+
+    .project-hero h1,
+    .project-title-long .project-hero h1,
+    .project-title-very-long .project-hero h1 {
+        max-width: 100%;
     }
 }
 

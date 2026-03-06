@@ -519,8 +519,25 @@ function enhanceProjectPage() {
     }
 
     const cleanTitle = pageTitle.textContent.replace(/\s*-\s*Details\s*$/i, "").trim();
-    pageTitle.textContent = cleanTitle;
+    pageTitle.textContent = "Yibo Wang";
     document.title = `${cleanTitle} | Yibo Wang`;
+
+    if (cleanTitle.length > 42) {
+        body.classList.add("project-title-long");
+    }
+    if (cleanTitle.length > 70) {
+        body.classList.add("project-title-very-long");
+    }
+
+    const navLink = header.querySelector("nav a");
+    if (navLink) {
+        navLink.textContent = "Back to Home";
+    }
+
+    const headerMeta = document.createElement("p");
+    headerMeta.className = "header-project-label";
+    headerMeta.textContent = meta.category;
+    pageTitle.insertAdjacentElement("afterend", headerMeta);
 
     const sections = [...document.querySelectorAll("section.section")];
     const galleryCount = document.querySelectorAll(".image-gallery img").length;
