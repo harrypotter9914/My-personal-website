@@ -573,6 +573,52 @@ footer .container {
     border-radius: var(--radius-lg);
 }
 
+.overview-grid,
+.detail-grid {
+    display: grid;
+    gap: 1rem;
+}
+
+.overview-grid {
+    grid-template-columns: minmax(0, 1.3fr) minmax(260px, 0.7fr);
+}
+
+.detail-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.detail-card,
+.callout-card {
+    padding: 1.15rem;
+    border-radius: var(--radius-lg);
+    background: rgba(255, 251, 245, 0.82);
+    border: 1px solid rgba(43, 30, 20, 0.08);
+    box-shadow: 0 16px 32px rgba(38, 23, 12, 0.08);
+}
+
+.detail-card h3,
+.callout-card strong {
+    margin: 0 0 0.6rem;
+    font-family: "Bricolage Grotesque", "Space Grotesk", sans-serif;
+    font-size: 1.05rem;
+}
+
+.detail-card p,
+.callout-card p {
+    margin: 0;
+    color: var(--muted);
+}
+
+.bullet-list {
+    margin: 0;
+    padding-left: 1.1rem;
+    color: var(--muted);
+}
+
+.bullet-list li + li {
+    margin-top: 0.45rem;
+}
+
 footer {
     padding: 0 0 2rem;
 }
@@ -634,6 +680,11 @@ footer {
 
     .photo-gallery {
         column-count: 1;
+    }
+
+    .overview-grid,
+    .detail-grid {
+        grid-template-columns: 1fr;
     }
 
     .project-hero h1,

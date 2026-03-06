@@ -1,97 +1,209 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fit to Pass - Details</title>
+    <title>Fit to Pass | Yibo Wang</title>
+    <meta name="description" content="Case study for Fit to Pass, a Unity platformer about body-shifting traversal, readable challenge design, and thematic gameplay.">
     <link rel="stylesheet" href="../assets/css/project-style.css">
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-P1YFTKP2V9"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-	
-	  gtag('config', 'G-P1YFTKP2V9');
-	</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P1YFTKP2V9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P1YFTKP2V9');
+    </script>
 </head>
-<body>
-    <!-- Header Section -->
+<body data-case-study="full" class="project-page project-kind-showcase">
     <header>
         <div class="container">
-            <h1 class="logo">Fit to Pass - Details</h1>
+            <div>
+                <h1 class="logo">Yibo Wang</h1>
+                <p class="header-project-label">Featured Game Case Study</p>
+            </div>
             <nav>
                 <ul>
-                    <li><a href="../index.html">Back to Home</a></li>
+                    <li><a href="../index.html#featured">Back to Home</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Project Images Section -->
-    <section id="project-images" class="section">
-        <div class="container">
-            <h2>Project Images</h2>
-            <div class="image-gallery">
-                <img src="../assets/images/project1-img1.png" alt="Image 1" onclick="openModal(this)">
-                <img src="../assets/images/project1-img2.png" alt="Image 2" onclick="openModal(this)">
-                <img src="../assets/images/project1-img3.png" alt="Image 3" onclick="openModal(this)">
-                <img src="../assets/images/project1-img4.png" alt="Image 4" onclick="openModal(this)">
-                <img src="../assets/images/project1-img5.png" alt="Image 5" onclick="openModal(this)">
+    <main>
+        <section class="project-hero">
+            <div class="container">
+                <div class="project-hero-card">
+                    <div class="project-hero-copy">
+                        <p class="project-kicker">Unity Platformer</p>
+                        <h1>Fit to Pass</h1>
+                        <p class="project-summary">A mechanic-driven platformer where changing body size is both the core movement system and the thematic hook. The project was designed around readable challenge escalation, playful traversal, and turning a health-related idea into something players understand through action rather than exposition.</p>
+                        <div class="project-tag-row">
+                            <span class="project-tag">Unity</span>
+                            <span class="project-tag">Gameplay Systems</span>
+                            <span class="project-tag">Level Design</span>
+                        </div>
+                        <div class="project-action-row">
+                            <a class="project-pill" href="#gallery">View Gallery</a>
+                            <a class="project-pill" href="https://github.com/harrypotter9914/Fit-to-Pass" target="_blank" rel="noopener noreferrer">Open Repository</a>
+                        </div>
+                    </div>
+                    <div class="project-metric-grid">
+                        <div class="project-metric"><span>Engine</span><strong>Unity</strong></div>
+                        <div class="project-metric"><span>Focus</span><strong>Traversal Through Body Change</strong></div>
+                        <div class="project-metric"><span>Format</span><strong>2D Platformer</strong></div>
+                        <div class="project-metric"><span>Role</span><strong>Design + Programming</strong></div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-
-    <!-- Embedded YouTube Video Section -->
-    <section id="project-video" class="section">
-        <div class="container">
-            <h2>Watch Project Video</h2>
-            <div class="video-wrapper">
-                <iframe
-                    src="https://www.youtube.com/embed/Hz-1OEceLIk?si=oNJpThqwDVloZV0E" 
-                    title="YouTube video player" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen>
-                </iframe>
+        <section class="section">
+            <div class="container case-card">
+                <p class="case-label">01 / Overview</p>
+                <h2>Turning a single mechanic into the whole game language.</h2>
+                <div class="overview-grid">
+                    <div>
+                        <p>The concept starts from a simple question: what if the player's body could become the main tool for reading and solving space? In Fit to Pass, size change is not a one-off gimmick. It becomes the rule that shapes corridor width, obstacle timing, jump rhythm, and how players scan a room before moving.</p>
+                        <p>The result is a platformer that asks players to think physically. Instead of only reacting with jumps and dashes, they constantly decide what form is appropriate for the next passage, threat, or timing window.</p>
+                    </div>
+                    <div class="callout-card">
+                        <strong>Core intent</strong>
+                        <p>Make the mechanic legible in seconds, interesting over time, and tied closely enough to the level design that the game could not exist without it.</p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
-	
-	<!-- Code Section -->
-    <section id="project-code" class="section">
-        <div class="container">
-            <h2>Project Code</h2>
-            <p>You can find the source code for this project on GitHub. Click the link below to explore the repository:</p>
-            <a href="https://github.com/harrypotter9914/Fit-to-Pass" target="_blank">
-                <img src="../assets/images/github-logo.png" alt="GitHub Logo" style="width: 150px; height: auto;">
-            </a>
-            <p><a href="https://github.com/harrypotter9914/Fit-to-Pass" target="_blank">View the GitHub Repository</a></p>
-        </div>
-    </section>
+        </section>
 
-    <!-- Back to Top Button -->
-    <div id="back-to-top">
-        <button>&uarr; Top</button>
-    </div>
+        <section class="section">
+            <div class="container case-card">
+                <p class="case-label">02 / My Role</p>
+                <h2>I handled both the design logic and the playable implementation.</h2>
+                <div class="detail-grid">
+                    <article class="detail-card">
+                        <h3>Design</h3>
+                        <ul class="bullet-list">
+                            <li>Defined the body-changing mechanic and how each state affects traversal.</li>
+                            <li>Structured level flow around teaching, reinforcing, and combining mechanic rules.</li>
+                            <li>Balanced puzzle readability with platforming pressure so the game stays active.</li>
+                        </ul>
+                    </article>
+                    <article class="detail-card">
+                        <h3>Implementation</h3>
+                        <ul class="bullet-list">
+                            <li>Built the gameplay logic in Unity and connected interaction states to player controls.</li>
+                            <li>Implemented level behavior, obstacle logic, and UI-facing feedback loops.</li>
+                            <li>Translated design intent directly into playable systems without a separate handoff.</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-    <footer>
+        <section class="section">
+            <div class="container case-card">
+                <p class="case-label">03 / Design Focus</p>
+                <h2>Readable challenge mattered more than raw difficulty.</h2>
+                <div class="detail-grid">
+                    <article class="detail-card">
+                        <h3>Mechanic Clarity</h3>
+                        <p>The player should understand quickly why a certain body state works in a specific space. That meant clean silhouettes, deliberate obstacle spacing, and clear geometric relationships in the level layout.</p>
+                    </article>
+                    <article class="detail-card">
+                        <h3>Escalation</h3>
+                        <p>Levels move from isolated mechanic tutorials to situations where players must combine movement choices under pressure. The challenge comes from sequencing and timing, not from arbitrary confusion.</p>
+                    </article>
+                    <article class="detail-card">
+                        <h3>Theme Through Play</h3>
+                        <p>The health angle is carried through embodiment. Instead of long explanation, the game uses physical transformation as the player's direct connection to the idea.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="project-video" class="section">
+            <div class="container case-card">
+                <p class="case-label">04 / Demo</p>
+                <h2>Playable rhythm and mechanic communication.</h2>
+                <div class="video-wrapper">
+                    <iframe
+                        src="https://www.youtube.com/embed/Hz-1OEceLIk?si=oNJpThqwDVloZV0E"
+                        title="Fit to Pass video"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="section">
+            <div class="container case-card">
+                <p class="case-label">05 / Gallery</p>
+                <h2>Level snapshots and player-facing moments.</h2>
+                <div class="image-gallery enhanced-gallery">
+                    <figure class="gallery-card feature-frame">
+                        <img src="../assets/images/project1-img1.png" alt="Fit to Pass hero screenshot" onclick="openModal(this)">
+                        <figcaption>A hero frame showing the game's visual tone and traversal framing.</figcaption>
+                    </figure>
+                    <figure class="gallery-card">
+                        <img src="../assets/images/project1-img2.png" alt="Fit to Pass level layout" onclick="openModal(this)">
+                        <figcaption>Level composition designed to teach the body-change mechanic through space.</figcaption>
+                    </figure>
+                    <figure class="gallery-card">
+                        <img src="../assets/images/project1-img3.png" alt="Fit to Pass obstacle sequence" onclick="openModal(this)">
+                        <figcaption>Obstacle sequencing built around form-switch timing and movement rhythm.</figcaption>
+                    </figure>
+                    <figure class="gallery-card">
+                        <img src="../assets/images/project1-img4.png" alt="Fit to Pass platforming challenge" onclick="openModal(this)">
+                        <figcaption>Platforming pressure increases by combining mechanic understanding with execution.</figcaption>
+                    </figure>
+                    <figure class="gallery-card">
+                        <img src="../assets/images/project1-img5.png" alt="Fit to Pass gameplay system frame" onclick="openModal(this)">
+                        <figcaption>A later-game frame where the mechanic functions as the player's main problem-solving tool.</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section id="project-code" class="section">
+            <div class="container case-card">
+                <p class="case-label">06 / Tech</p>
+                <h2>Tech and production notes.</h2>
+                <div class="detail-grid">
+                    <article class="detail-card">
+                        <h3>What was built</h3>
+                        <ul class="bullet-list">
+                            <li>Player state switching tied directly to collision and traversal logic.</li>
+                            <li>Platforming spaces authored to teach through interaction instead of text.</li>
+                            <li>UI and moment-to-moment feedback integrated around system legibility.</li>
+                        </ul>
+                    </article>
+                    <article class="detail-card">
+                        <h3>Repository</h3>
+                        <p>The public repository contains the project code for the prototype.</p>
+                        <a class="resource-link" href="https://github.com/harrypotter9914/Fit-to-Pass" target="_blank" rel="noopener noreferrer">View GitHub Repository</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <div id="back-to-top">
+            <button>&uarr; Top</button>
+        </div>
+    </main>
+
+    <footer class="project-footer">
         <div class="container">
             <p>&copy; 2026 Yibo Wang. All rights reserved.</p>
         </div>
     </footer>
-	
-<!-- Fullscreen Image Modal -->
-<div id="imageModal" class="modal">
-    <span class="close" onclick="closeModal()">&times;</span>
-    <div id="imageContainer">
-        <img class="modal-content" id="modalImage">
-    </div>
-</div>
 
-	<script src="../assets/js/script.js"></script>
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div id="imageContainer">
+            <img class="modal-content" id="modalImage" alt="Expanded Fit to Pass screenshot">
+        </div>
+    </div>
+
+    <script src="../assets/js/script.js"></script>
 </body>
 </html>
-
-

@@ -1,101 +1,225 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Babel - Details</title>
+    <title>Babel | Yibo Wang</title>
+    <meta name="description" content="Case study for Babel, a custom-engine action adventure with Metroidvania structure, combat progression, and historical atmosphere.">
     <link rel="stylesheet" href="../assets/css/project-style.css">
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-P1YFTKP2V9"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-	
-	  gtag('config', 'G-P1YFTKP2V9');
-	</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P1YFTKP2V9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P1YFTKP2V9');
+    </script>
 </head>
-<body>
-    <!-- Header Section -->
+<body data-case-study="full" class="project-page project-kind-showcase">
     <header>
         <div class="container">
-            <h1 class="logo">Babel - Details</h1>
+            <div>
+                <h1 class="logo">Yibo Wang</h1>
+                <p class="header-project-label">Featured Game Case Study</p>
+            </div>
             <nav>
                 <ul>
-                    <li><a href="../index.html">Back to Home</a></li>
+                    <li><a href="../index.html#featured">Back to Home</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Project Images Section -->
-    <section id="project-images" class="section">
-        <div class="container">
-            <h2>Project Images</h2>
-            <div class="image-gallery">
-                <img src="../assets/images/project2-img1.png" alt="Image 1" onclick="openModal(this)">
-                <img src="../assets/images/project2-img2.png" alt="Image 2" onclick="openModal(this)">
-                <img src="../assets/images/project2-img3.png" alt="Image 3" onclick="openModal(this)">
-                <img src="../assets/images/project2-img4.png" alt="Image 4" onclick="openModal(this)">
-                <img src="../assets/images/project2-img5.png" alt="Image 5" onclick="openModal(this)">
+    <main>
+        <section class="project-hero">
+            <div class="container">
+                <div class="project-hero-card">
+                    <div class="project-hero-copy">
+                        <p class="project-kicker">Custom Engine Action Adventure</p>
+                        <h1>Babel</h1>
+                        <p class="project-summary">A narrative-heavy action adventure set against plague, faith, and ambition in fifteenth-century Sicily. The project combines Metroidvania progression, boss encounters, and ability-gated exploration, while also involving collaboration with a custom game engine rather than a ready-made toolchain.</p>
+                        <div class="project-tag-row">
+                            <span class="project-tag">Custom Engine</span>
+                            <span class="project-tag">Metroidvania Structure</span>
+                            <span class="project-tag">Narrative Design</span>
+                        </div>
+                        <div class="project-action-row">
+                            <a class="project-pill" href="#gallery">View Gallery</a>
+                            <a class="project-pill" href="https://github.com/harrypotter9914/game" target="_blank" rel="noopener noreferrer">Open Repository</a>
+                        </div>
+                    </div>
+                    <div class="project-metric-grid">
+                        <div class="project-metric"><span>Engine</span><strong>Custom</strong></div>
+                        <div class="project-metric"><span>Focus</span><strong>Progression + Combat</strong></div>
+                        <div class="project-metric"><span>Format</span><strong>2D Action Adventure</strong></div>
+                        <div class="project-metric"><span>Role</span><strong>Design + Partial Engine Work</strong></div>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Embedded YouTube Video Section -->
-    <section id="project-video" class="section">
-        <div class="container">
-            <h2>Watch Project Video</h2>
-            <div class="video-wrapper">
-                <iframe
-                    src="https://www.youtube.com/embed/xLp3eK2yMcg?si=M6sLgiwtmDhNdtcV" 
-                    title="YouTube video player" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen>
-                </iframe>
+        <section class="section">
+            <div class="container case-card">
+                <p class="case-label">01 / Overview</p>
+                <h2>Building a world where progression, atmosphere, and mechanics reinforce each other.</h2>
+                <div class="overview-grid">
+                    <div>
+                        <p>Babel was designed as a world that players unfold piece by piece. Exploration is not only about movement skill; it is also about earning new ways to read the environment through abilities, combat readiness, and narrative context. That structure made the game a natural fit for Metroidvania-style gating.</p>
+                        <p>The setting and tone mattered just as much as the systems. The game aims to make the tower feel mythic, oppressive, and historically grounded enough to support the player's sense of danger and curiosity.</p>
+                    </div>
+                    <div class="callout-card">
+                        <strong>Core intent</strong>
+                        <p>Create a game where unlocking a new power changes both where the player can go and how the world feels to traverse.</p>
+                    </div>
+                </div>
             </div>
+        </section>
+
+        <section class="section">
+            <div class="container case-card">
+                <p class="case-label">02 / My Role</p>
+                <h2>I worked at the intersection of game design and technical implementation.</h2>
+                <div class="detail-grid">
+                    <article class="detail-card">
+                        <h3>Design Responsibilities</h3>
+                        <ul class="bullet-list">
+                            <li>Defined exploration flow, ability-gated progression, and combat-facing player growth.</li>
+                            <li>Shaped how skills like Shockwave, Wall Jump, and Crystal Dash unlock space.</li>
+                            <li>Built narrative framing so mechanical progression supports tone and story direction.</li>
+                        </ul>
+                    </article>
+                    <article class="detail-card">
+                        <h3>Technical Responsibilities</h3>
+                        <ul class="bullet-list">
+                            <li>Worked with a custom engine rather than relying on a standard editor workflow.</li>
+                            <li>Contributed to systems implementation while coordinating with engine constraints.</li>
+                            <li>Translated design needs into workable behaviors inside a more technical pipeline.</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container case-card">
+                <p class="case-label">03 / Design Focus</p>
+                <h2>The important part was not just having abilities, but making each one change the map.</h2>
+                <div class="detail-grid">
+                    <article class="detail-card">
+                        <h3>Ability-Gated Exploration</h3>
+                        <p>Each skill needed to open meaningful paths rather than acting like a token unlock. The map and encounter placement were shaped so returning to older spaces feels purposeful instead of repetitive.</p>
+                    </article>
+                    <article class="detail-card">
+                        <h3>Combat and Tension</h3>
+                        <p>The player's movement and offensive growth were paced together so combat escalation does not feel detached from traversal progression.</p>
+                    </article>
+                    <article class="detail-card">
+                        <h3>Atmosphere Through Structure</h3>
+                        <p>The architecture, enemy presence, and route reveal are used to support the feeling of climbing deeper into a dangerous place shaped by myth and collapse.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="project-video" class="section">
+            <div class="container case-card">
+                <p class="case-label">04 / Demo</p>
+                <h2>How the world, combat, and movement read in motion.</h2>
+                <div class="video-wrapper">
+                    <iframe
+                        src="https://www.youtube.com/embed/xLp3eK2yMcg?si=M6sLgiwtmDhNdtcV"
+                        title="Babel video"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="section">
+            <div class="container case-card">
+                <p class="case-label">05 / Gallery</p>
+                <h2>World frames, route cues, and encounter mood.</h2>
+                <div class="image-gallery enhanced-gallery">
+                    <figure class="gallery-card feature-frame">
+                        <img src="../assets/images/project2-img1.png" alt="Babel hero screenshot" onclick="openModal(this)">
+                        <figcaption>A representative frame showing the game's tone, scale, and side-scrolling composition.</figcaption>
+                    </figure>
+                    <figure class="gallery-card">
+                        <img src="../assets/images/project2-img2.png" alt="Babel exploration frame" onclick="openModal(this)">
+                        <figcaption>Environmental structure designed to support route curiosity and gated return paths.</figcaption>
+                    </figure>
+                    <figure class="gallery-card">
+                        <img src="../assets/images/project2-img3.png" alt="Babel combat scene" onclick="openModal(this)">
+                        <figcaption>Combat staging integrated into the same spaces used for traversal and progression teaching.</figcaption>
+                    </figure>
+                    <figure class="gallery-card">
+                        <img src="../assets/images/project2-img4.png" alt="Babel ability frame" onclick="openModal(this)">
+                        <figcaption>Ability unlocks are intended to reframe how players interpret previously unreachable spaces.</figcaption>
+                    </figure>
+                    <figure class="gallery-card">
+                        <img src="../assets/images/project2-img5.png" alt="Babel mood frame" onclick="openModal(this)">
+                        <figcaption>The visual composition supports the tower's sense of myth, danger, and ambition.</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section id="project-code" class="section">
+            <div class="container case-card">
+                <p class="case-label">06 / Tech</p>
+                <h2>Technical and production notes.</h2>
+                <div class="detail-grid">
+                    <article class="detail-card">
+                        <h3>What mattered technically</h3>
+                        <ul class="bullet-list">
+                            <li>Design decisions had to respect the constraints of a custom engine workflow.</li>
+                            <li>Progression and moment-to-moment gameplay needed to stay coherent without editor convenience.</li>
+                            <li>The project required collaboration between game-layer design and engine-level capability.</li>
+                        </ul>
+                    </article>
+                    <article class="detail-card">
+                        <h3>Resources</h3>
+                        <p>The game and engine materials live across separate repositories.</p>
+                        <div class="resource-stack">
+                            <article class="resource-card">
+                                <div class="resource-copy">
+                                    <h3>Game Repository</h3>
+                                    <p>github.com</p>
+                                </div>
+                                <a class="resource-link" href="https://github.com/harrypotter9914/game" target="_blank" rel="noopener noreferrer">Open</a>
+                            </article>
+                            <article class="resource-card">
+                                <div class="resource-copy">
+                                    <h3>Custom Engine Repository</h3>
+                                    <p>gitee.com</p>
+                                </div>
+                                <a class="resource-link" href="https://gitee.com/Wander_Wang/mygameengine2021" target="_blank" rel="noopener noreferrer">Open</a>
+                            </article>
+                        </div>
+                        <p class="resource-note">Only part of the custom game engine was designed and developed by me.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <div id="back-to-top">
+            <button>&uarr; Top</button>
         </div>
-    </section>
+    </main>
 
-<!-- Code Section -->
-    <section id="project-code" class="section">
-        <div class="container">
-            <h2>Project Code</h2>
-            <p>You can find the source code for this project on GitHub. Click the link below to explore the repository:</p>
-            <a href="https://github.com/harrypotter9914/game" target="_blank">
-                <img src="../assets/images/github-logo.png" alt="GitHub Logo" style="width: 150px; height: auto;">
-            </a>
-            <p><a href="https://github.com/harrypotter9914/game" target="_blank">View the GitHub Repository</a></p>
-			<!-- 鑷埗娓告垙寮曟搸浠ｇ爜閾炬帴 -->
-            <a href="https://github.com/harrypotter9914/custom-game-engine" target="_blank">
-            </a>
-            <p><a href="https://gitee.com/Wander_Wang/mygameengine2021" target="_blank">View the Custom Game Engine Repository</a></p>
-			<p style="color: red; font-size: 14px; text-align: center; margin-top: -10px;">
-			    Only a part of this game engine was designed and developed by me. 
-			</p>
-		</div>
-    </section>
-
-    <!-- Back to Top Button -->
-    <div id="back-to-top">
-        <button>&uarr; Top</button>
-    </div>
-	
-    <footer>
+    <footer class="project-footer">
         <div class="container">
             <p>&copy; 2026 Yibo Wang. All rights reserved.</p>
         </div>
     </footer>
-	<!-- Fullscreen Image Modal -->
-	<div id="imageModal" class="modal">
-	    <span class="close" onclick="closeModal()">&times;</span>
-	    <div id="imageContainer">
-	        <img class="modal-content" id="modalImage">
-	    </div>
-	</div>
-	<script src="../assets/js/script.js"></script>
+
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div id="imageContainer">
+            <img class="modal-content" id="modalImage" alt="Expanded Babel screenshot">
+        </div>
+    </div>
+
+    <script src="../assets/js/script.js"></script>
 </body>
 </html>
-
-

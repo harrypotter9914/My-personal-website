@@ -499,6 +499,10 @@ function enhanceProjectPage() {
         return;
     }
 
+    if (body.dataset.caseStudy === "full") {
+        return;
+    }
+
     const fileName = path.split("/").pop();
     const meta = projectMeta[fileName] || {
         category: "Project",
