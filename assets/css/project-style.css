@@ -619,6 +619,75 @@ footer .container {
     margin-top: 0.45rem;
 }
 
+.portfolio-card {
+    padding: clamp(1.4rem, 3vw, 2rem);
+}
+
+.portfolio-intro {
+    max-width: 58rem;
+    margin: 0 0 1.4rem;
+    color: var(--muted);
+    font-size: 1rem;
+}
+
+.portfolio-flow {
+    display: grid;
+    gap: 1.4rem;
+}
+
+.portfolio-sheet {
+    margin: 0;
+}
+
+.portfolio-frame {
+    overflow: hidden;
+    border-radius: calc(var(--radius-xl) - 8px);
+    background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0.74), rgba(246, 236, 222, 0.96)),
+        linear-gradient(135deg, rgba(208, 93, 40, 0.1), rgba(30, 126, 124, 0.12));
+    border: 1px solid rgba(43, 30, 20, 0.08);
+    box-shadow: 0 28px 56px rgba(38, 23, 12, 0.12);
+}
+
+.portfolio-frame img {
+    width: 100%;
+    height: auto;
+    cursor: zoom-in;
+}
+
+.portfolio-sheet figcaption {
+    margin: 0.85rem 0 0;
+    padding: 0 0.2rem;
+    color: var(--muted);
+    font-size: 0.97rem;
+}
+
+.portfolio-sheet-lead .portfolio-frame {
+    box-shadow: 0 34px 68px rgba(38, 23, 12, 0.16);
+}
+
+.project-notes-section {
+    padding-top: 0.3rem;
+}
+
+.notes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    align-items: start;
+}
+
+.note-card {
+    height: 100%;
+}
+
+.note-card h2 {
+    margin-top: 0;
+    font-size: clamp(1.45rem, 2vw, 1.9rem);
+    line-height: 1.05;
+    letter-spacing: -0.04em;
+}
+
 footer {
     padding: 0 0 2rem;
 }
@@ -683,7 +752,8 @@ footer {
     }
 
     .overview-grid,
-    .detail-grid {
+    .detail-grid,
+    .notes-grid {
         grid-template-columns: 1fr;
     }
 
