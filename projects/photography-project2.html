@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drone Photography - Details</title>
+    <link rel="stylesheet" href="../assets/css/project-style.css">
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-P1YFTKP2V9"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	
+	  gtag('config', 'G-P1YFTKP2V9');
+	</script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1 class="logo">Drone Photography - Details</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Back to Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Project Images Section -->
+    <section id="project-images" class="section">
+        <div class="container">
+            <h2>Project Images</h2>
+            <div class="image-gallery">
+                <img src="../assets/images/photography-project2-img1.JPG" alt="Image 1" onclick="openModal(this)">
+                <img src="../assets/images/photography-project2-img2.png" alt="Image 2" onclick="openModal(this)">
+                <img src="../assets/images/photography-project2-img3.png" alt="Image 3" onclick="openModal(this)">
+                <img src="../assets/images/photography-project2-img4.png" alt="Image 4" onclick="openModal(this)">
+                <img src="../assets/images/photography-project2-img5.png" alt="Image 5" onclick="openModal(this)">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Back to Top Button -->
+    <div id="back-to-top">
+        <button>&uarr; Top</button>
+    </div>
+	
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Yibo Wang. All rights reserved.</p>
+        </div>
+    </footer>
+	<!-- Fullscreen Image Modal -->
+	<div id="imageModal" class="modal">
+	    <span class="close" onclick="closeModal()">&times;</span>
+	    <div id="imageContainer">
+	        <img class="modal-content" id="modalImage">
+	    </div>
+	</div>
+	<script src="../assets/js/script.js"></script>
+</body>
+</html>
+
+

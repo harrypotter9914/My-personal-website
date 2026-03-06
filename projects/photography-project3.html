@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinematic Frame Studies - Details</title>
+    <link rel="stylesheet" href="../assets/css/project-style.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P1YFTKP2V9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P1YFTKP2V9');
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Cinematic Frame Studies</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Back to Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="project-images" class="section">
+        <div class="container">
+            <h2>Frame Studies</h2>
+            <div class="image-gallery">
+                <img src="../assets/images/project3-img1.png" alt="Frame study 1" onclick="openModal(this)">
+                <img src="../assets/images/project3-img2.png" alt="Frame study 2" onclick="openModal(this)">
+                <img src="../assets/images/project3-img3.png" alt="Frame study 3" onclick="openModal(this)">
+                <img src="../assets/images/project3-img4.png" alt="Frame study 4" onclick="openModal(this)">
+                <img src="../assets/images/project3-img5.png" alt="Frame study 5" onclick="openModal(this)">
+            </div>
+        </div>
+    </section>
+
+    <div id="back-to-top">
+        <button>&uarr; Top</button>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Yibo Wang. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div id="imageContainer">
+            <img class="modal-content" id="modalImage" alt="Expanded frame study">
+        </div>
+    </div>
+
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>
+
+

@@ -1,329 +1,445 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Website</title>
-    <link rel="stylesheet" href="style.css">
-	<!-- Google tag (gtag.js) -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-P1YFTKP2V9"></script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-	
-	  gtag('config', 'G-P1YFTKP2V9');
-	</script>
+    <title>Yibo Wang | Game Designer & Technical Developer</title>
+    <meta name="description" content="Portfolio of Yibo Wang, a game designer and technical developer building gameplay systems, interactive narratives, and cross-disciplinary digital projects.">
+    <meta property="og:title" content="Yibo Wang | Game Designer & Technical Developer">
+    <meta property="og:description" content="Gameplay design, technical implementation, research, and interactive media projects.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;700;800&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P1YFTKP2V9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-P1YFTKP2V9');
+    </script>
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <header>
-        <div class="container">
-            <h1 class="logo">Welcome to My Personal Website</h1>
-            <nav>
-                <ul>
-                    <li><a href="#intro">About Me</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#projects">Other Projects</a></li>
-					<li><a href="#research">Research & Innovation</a></li>
-                    <li><a href="#community-impact">Community Impact (Volunteer)</a></li>
-					<li><a href="#award">Awards & Leadership</a></li>
-					<li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <!-- About Me Section -->
-    <section id="intro" class="section intro">
-        <div class="container">
-            <h2>About Me</h2>
-            <img src="images/your-photo.jpg" alt="Profile Photo" class="profile-photo">
-            <p>
-                Hi there! I’m Yibo Wang, a <span class="highlight">game designer and developer</span> who bridges <span class="highlight">game design and technical implementation</span> to create <span class="highlight">immersive experiences</span>.
-				<br><br>
-				I craft unique <span class="highlight">game mechanics and narratives</span> as a designer, while also <span class="highlight">building the systems</span> that bring them to life as a programmer—from <span class="highlight">Unity-based</span> 2D platformers to <span class="highlight">Unreal Engine-powered</span> emotional driving simulators.
-                <br><br>
-                When I’m not coding or sketching level layouts, you’ll find me <span class="highlight">flying drones</span> to capture landscapes that <span class="highlight">inspire</span> my game worlds, or <span class="highlight">collaborating</span> with others—whether <span class="highlight">teaching science</span> through interactive games or co-developing AI tools with international peers at Oxford’s summer program.
-                <br><br>
-                I believe the <span class="highlight">best games</span> are born from <span class="highlight">teamwork and diverse perspectives</span>, Let’s make magic together!
-            </p>
-        </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="section portfolio">
-        <div class="container">
-            <h2>My Portfolio</h2>
-			<p style="color: red; font-size: 14px; text-align: center; margin-top: -10px;">
-			    The art assets in these games were not created by me. However, all other design and programming, including but not limited to UI layout, element placement, level design, character design, and functional logic, were fully completed by me.
-			</p>
-            <div class="portfolio-items">
-                <!-- Project 1 -->
-                <div class="portfolio-item">
-                    <img src="images/project1.png" alt="Project 1">
-                    <h3>Fit to Pass</h3>
-					<p style="font-style: italic; font-size: 14px; margin: -10px 0 10px;">Built with Unity</p>
-                    <p>As an overworked office worker neglecting your health, you are abducted by a mysterious organization and turned into a prototype with the power to manipulate your body’s size and shape. To escape, you must master these abilities, navigate through challenging levels, and overcome obstacles, learning the importance of physical well-being along the way.</p>
-                    <a href="project1.html" class="btn">Learn More</a>
-                </div>
-                <!-- Project 2 -->
-                <div class="portfolio-item">
-                    <img src="images/project2.png" alt="Project 2">
-                    <h3>Babel</h3>
-					<p style="font-style: italic; font-size: 14px; margin: -10px 0 10px;">Built with a custom game engine</p>
-                    <p>"Babel" is a 2D action-adventure game set in the mid-15th century in the Kingdom of Sicily. Amid the Black Death and famine, players explore the legendary Tower of Babel, battling enemies and uncovering mysteries of faith, power, and human ambition. The game combines Metroidvania mechanics with deep narrative elements, allowing players to unlock abilities like Shockwave, Wall Jump, and Crystal Dash to progress through complex levels and face tough bosses.</p>
-                    <a href="project2.html" class="btn">Learn More</a>
-                </div>
-                <!-- Project 3 -->
-                <div class="portfolio-item">
-                    <img src="images/project3.png" alt="Project 3">
-                    <h3>Echo of Crash</h3>
-					<p style="font-style: italic; font-size: 14px; margin: -10px 0 10px;">Built with Unreal Engine</p>
-                    <p>On a peaceful morning, a family sets out for a drive, but their journey is interrupted by multiple accidents caused by careless drivers. The driver has a unique gift: in the moment of impact, he can shift the accident into a timeless space, becoming a spirit who can freely investigate the scene. He must uncover the truth behind each crash, helping others realize their mistakes and gradually restoring safety to the roads.</p>
-                    <a href="project3.html" class="btn">Learn More</a>
-                </div>
+    <div class="site-shell">
+        <header class="site-header">
+            <div class="container header-row">
+                <a class="brand-mark" href="#top">
+                    <strong>Yibo Wang</strong>
+                    <span>Game Designer & Technical Developer</span>
+                </a>
+                <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" data-menu-toggle>
+                    <span></span><span></span><span></span>
+                </button>
+                <nav class="site-nav" data-site-nav data-open="false">
+                    <ul>
+                        <li><a href="#featured">Featured</a></li>
+                        <li><a href="#capabilities">Capabilities</a></li>
+                        <li><a href="#archive">Archive</a></li>
+                        <li><a href="#impact">Approach</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
-        </div>
-    </section>
+        </header>
 
-<!-- Projects Section -->
-<section id="projects" class="section projects">
-    <div class="container">
-        <h2>Other Projects</h2>
-        <div class="tabs">
-            <button class="tab-button active" data-target="game-projects">Game Projects</button>
-            <button class="tab-button" data-target="software-projects">Software Projects</button>
-            <button class="tab-button" data-target="video-projects">Video Projects</button>
-			<button class="tab-button" data-target="photography-projects">Photography Projects</button>
-        </div>
+        <main id="top">
+            <section class="hero">
+                <div class="container hero-grid">
+                    <div class="hero-copy">
+                        <div class="eyebrow">Portfolio 2026</div>
+                        <h1>Designing <span>playable systems</span> and building the tech that makes them land.</h1>
+                        <p class="lede">I am Yibo Wang, a game designer and technical developer focused on gameplay feel, level flow, interaction logic, and cross-disciplinary production. My strongest work sits where design intent meets implementation: Unity prototypes, Unreal experiences, custom-engine collaboration, VR interaction, and technical systems that stay readable for players.</p>
+                        <div class="hero-actions">
+                            <a class="button" href="#featured">See featured work</a>
+                            <a class="button-secondary" href="#contact">Contact me</a>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="stat"><strong>3</strong><span>featured game case studies</span></div>
+                            <div class="stat"><strong>20+</strong><span>supporting projects across software, research, and media</span></div>
+                            <div class="stat"><strong>1</strong><span>clear profile: game design with technical execution</span></div>
+                        </div>
+                    </div>
+                    <aside class="hero-panel">
+                        <div class="portrait-wrap">
+                            <img src="assets/images/your-photo.jpg" alt="Portrait of Yibo Wang">
+                            <div class="portrait-note">
+                                <strong>Game Designer & Technical Developer</strong>
+                                <span>Interactive systems, world-building, tools, and cross-medium storytelling.</span>
+                            </div>
+                        </div>
+                        <ul class="hero-list">
+                            <li><strong>What I build</strong>Gameplay systems, interactive narrative, prototypes, and player-facing tools.</li>
+                            <li><strong>How I work</strong>I bridge concept, implementation, iteration, and presentation instead of separating design from execution.</li>
+                            <li><strong>What supports the game work</strong>Research, video, photography, and community work that sharpen observation and communication.</li>
+                        </ul>
+                    </aside>
+                </div>
+            </section>
 
-        <!-- Game Projects -->
-        <div class="tab-content" id="game-projects">
-            <h3>Game Projects</h3>
-            <div class="portfolio-items">
-                <!-- Game Project 1 -->
-                <div class="portfolio-item">
-                    <img src="images/game-project1.png" alt="Game Project 1">
-                    <h3>Forest Book Garden: A Next-Generation VR Library Experience</h3>
-                    <p>"Forest Book Garden" is a virtual reality library that transforms traditional reading and learning spaces into an immersive, interactive environment. Developed at Beijing University of Technology, this project leverages VR technology to offer users engaging experiences through dynamic book retrieval, AI-enhanced exhibits, and virtual learning activities. It blends educational functionalities with advanced interactive design, providing access to a wealth of knowledge across multiple virtual zones, from children's areas to a metaverse experience hall.</p>
-                    <a href="game-project1.html" class="btn">Learn More</a>
+            <section class="section" id="featured">
+                <div class="container">
+                    <div class="section-heading">
+                        <div class="eyebrow">Featured Work</div>
+                        <h2>The strongest expression of my game-design profile.</h2>
+                        <p>These are the projects that best represent how I think: mechanics first, experience clarity, and technical implementation close to the design process.</p>
+                    </div>
+                    <div class="section-card">
+                        <p class="disclaimer">Art assets used in several game projects were not created by me. The design, gameplay logic, UI layout, level structure, and technical implementation shown here were my work.</p>
+                        <div class="featured-grid">
+                            <article class="spotlight-card">
+                                <img src="assets/images/project1.png" alt="Fit to Pass screenshot">
+                                <div class="spotlight-copy">
+                                    <div class="tag-row"><span class="tag">Featured Game</span><span class="meta-pill">Unity</span></div>
+                                    <h3>Fit to Pass</h3>
+                                    <p>A body-shifting platformer where traversal mechanics carry both challenge design and theme.</p>
+                                    <div class="meta-row"><span class="meta-pill">Gameplay systems</span><span class="meta-pill">Level flow</span></div>
+                                    <a class="project-link" href="projects/project1.html">Open case study</a>
+                                </div>
+                            </article>
+                            <article class="spotlight-card">
+                                <img src="assets/images/project2.png" alt="Babel screenshot">
+                                <div class="spotlight-copy">
+                                    <div class="tag-row"><span class="tag">Featured Game</span><span class="meta-pill">Custom Engine</span></div>
+                                    <h3>Babel</h3>
+                                    <p>A narrative-heavy action adventure with Metroidvania structure, combat gating, and engine-level collaboration.</p>
+                                    <div class="meta-row"><span class="meta-pill">Narrative design</span><span class="meta-pill">Progression design</span></div>
+                                    <a class="project-link" href="projects/project2.html">Open case study</a>
+                                </div>
+                            </article>
+                            <article class="spotlight-card">
+                                <img src="assets/images/project3.png" alt="Echo of Crash screenshot">
+                                <div class="spotlight-copy">
+                                    <div class="tag-row"><span class="tag">Featured Game</span><span class="meta-pill">Unreal Engine</span></div>
+                                    <h3>Echo of Crash</h3>
+                                    <p>An interactive driving narrative built around accident reconstruction, scene reading, and emotional pacing.</p>
+                                    <div class="meta-row"><span class="meta-pill">Interactive storytelling</span><span class="meta-pill">Cinematic design</span></div>
+                                    <a class="project-link" href="projects/project3.html">Open case study</a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
                 </div>
-                <!-- Game Project 2 -->
-                <div class="portfolio-item">
-                    <img src="images/game-project2.png" alt="Game Project 2">
-                    <h3>Ninja</h3>
-                    <p>Ninja is an action-adventure game set in Japan’s Sengoku period. Players control Bintaro, a humble farmer who is mistakenly recruited into a war to defeat a cursed general. The game focuses on exploration, puzzle-solving, and chase mechanics as players guide Bintaro through dangerous environments, solving riddles and evading enemies. With a blend of strategy and quick reflexes, the game challenges players to outsmart their foes and break the curse threatening his homeland.</p>
-                    <a href="game-project2.html" class="btn">Learn More</a>
+            </section>
+            <section class="section" id="capabilities">
+                <div class="container">
+                    <div class="section-heading">
+                        <div class="eyebrow">Capabilities</div>
+                        <h2>What I bring to a team beyond a single title.</h2>
+                        <p>I am most useful when the work needs both design judgment and implementation discipline.</p>
+                    </div>
+                    <div class="section-card">
+                        <div class="capability-grid">
+                            <article class="capability-card">
+                                <strong>Gameplay and level design</strong>
+                                <p>I build mechanics, progression loops, encounter flow, and environmental guidance with player readability in mind.</p>
+                            </article>
+                            <article class="capability-card">
+                                <strong>Technical implementation</strong>
+                                <p>I can move from intent to working behavior in Unity, Unreal, custom-engine collaboration, and software-heavy prototypes.</p>
+                            </article>
+                            <article class="capability-card">
+                                <strong>Cross-disciplinary presentation</strong>
+                                <p>Research, video, photography, and community work make me better at framing ideas, pitching them, and communicating them clearly.</p>
+                            </article>
+                        </div>
+                    </div>
                 </div>
+            </section>
+
+            <section class="section" id="archive">
+                <div class="container">
+                    <div class="section-heading">
+                        <div class="eyebrow">Archive</div>
+                        <h2>Compressed, but still complete.</h2>
+                        <p>The homepage stays focused on game work. Everything else remains accessible through a categorized archive.</p>
+                    </div>
+                    <div class="section-card" data-tab-group>
+                        <div class="tab-toolbar" role="tablist" aria-label="Project archive tabs">
+                            <button class="tab-button is-active" type="button" role="tab" aria-selected="true" data-tab-target="games">Additional Games</button>
+                            <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab-target="technical">Software & Research</button>
+                            <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab-target="media">Media & Photography</button>
+                            <button class="tab-button" type="button" role="tab" aria-selected="false" data-tab-target="impact">Community & Awards</button>
+                        </div>
+
+                        <div data-tab-panel="games">
+                            <div class="project-grid">
+                                <article class="project-card">
+                                    <img src="assets/images/game-project1.png" alt="Forest Book Garden screenshot">
+                                    <div class="project-card-content">
+                                        <div class="tag-row"><span class="tag">Game Project</span><span class="meta-pill">VR</span></div>
+                                        <h3>Forest Book Garden</h3>
+                                        <p>A VR library experience that turns reading, retrieval, and exhibition design into an explorable interactive world.</p>
+                                        <div class="link-row"><a class="project-link" href="projects/game-project1.html">Open case study</a></div>
+                                    </div>
+                                </article>
+                                <article class="project-card">
+                                    <img src="assets/images/game-project2.png" alt="Ninja screenshot">
+                                    <div class="project-card-content">
+                                        <div class="tag-row"><span class="tag">Game Project</span><span class="meta-pill">Action Adventure</span></div>
+                                        <h3>Ninja</h3>
+                                        <p>A Sengoku-era action adventure focused on chase sequences, puzzle flow, and readable exploration pressure.</p>
+                                        <div class="link-row"><a class="project-link" href="projects/game-project2.html">Open case study</a></div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+
+                        <div data-tab-panel="technical" hidden>
+                            <div class="project-grid">
+                                <article class="project-card">
+                                    <img src="assets/images/software-project1.png" alt="High-Speed Rail Information Management System">
+                                    <div class="project-card-content">
+                                        <div class="tag-row"><span class="tag">Software Project</span><span class="meta-pill">Java</span></div>
+                                        <h3>High-Speed Rail Information Management System</h3>
+                                        <p>A Java management system that brings together object-oriented design, GUI workflows, and transport data handling.</p>
+                                        <div class="link-row"><a class="project-link" href="projects/software-project1.html">Open case study</a></div>
+                                    </div>
+                                </article>
+                                <article class="project-card">
+                                    <img src="assets/images/software-project2.png" alt="Handwritten Chinese Character Recognition System">
+                                    <div class="project-card-content">
+                                        <div class="tag-row"><span class="tag">Software Project</span><span class="meta-pill">Python</span></div>
+                                        <h3>Handwritten Chinese Character Recognition System</h3>
+                                        <p>A recognition pipeline that combines image preprocessing, neural inference, and multimodal output for practical use.</p>
+                                        <div class="link-row"><a class="project-link" href="projects/software-project2.html">Open case study</a></div>
+                                    </div>
+                                </article>
+                                <article class="project-card">
+                                    <img src="assets/images/software-project3.png" alt="GongDa SuiShouJi Android App">
+                                    <div class="project-card-content">
+                                        <div class="tag-row"><span class="tag">Software Project</span><span class="meta-pill">Android</span></div>
+                                        <h3>GongDa SuiShouJi Android App</h3>
+                                        <p>An Android note-taking tool designed around clear task flow, lightweight storage, and fast day-to-day usability.</p>
+                                        <div class="link-row"><a class="project-link" href="projects/software-project3.html">Open case study</a></div>
+                                    </div>
+                                </article>
+                                <article class="project-card">
+                                    <img src="assets/images/research-project1.png" alt="Portable Blood Pressure Monitor">
+                                    <div class="project-card-content">
+                                        <div class="tag-row"><span class="tag">Research</span><span class="meta-pill">Health Tech</span></div>
+                                        <h3>Portable Blood Pressure Monitor</h3>
+                                        <p>A non-invasive monitoring concept using PPG signals, LSTM-based estimation, and mobile delivery for real-time health tracking.</p>
+                                        <div class="link-row"><a class="project-link" href="projects/research-project1.html">Open case study</a></div>
+                                    </div>
+                                </article>
+                                <article class="project-card">
+                                    <img src="assets/images/research-project2.png" alt="Live2D Avatar Generation">
+                                    <div class="project-card-content">
+                                        <div class="tag-row"><span class="tag">Research</span><span class="meta-pill">Generative AI</span></div>
+                                        <h3>Live2D Avatar Generation</h3>
+                                        <p>A workflow for producing accessible animated avatars through AI image generation, cleanup, and rig-ready processing.</p>
+                                        <div class="link-row"><a class="project-link" href="projects/research-project2.html">Open case study</a></div>
+                                    </div>
+                                </article>
+                                <article class="project-card">
+                                    <img src="assets/images/research-project3.png" alt="Ancient Glass Composition Analysis">
+                                    <div class="project-card-content">
+                                        <div class="tag-row"><span class="tag">Research</span><span class="meta-pill">Data Modeling</span></div>
+                                        <h3>Ancient Glass Composition Analysis</h3>
+                                        <p>A mathematical modeling project for classifying ancient glass artifacts through composition analysis, clustering, and prediction.</p>
+                                        <div class="link-row"><a class="project-link" href="projects/research-project3.html">Open case study</a></div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <div data-tab-panel="media" hidden>
+                            <div class="project-grid">
+                                <article class="project-card">
+                                    <img src="assets/images/video-project1.jpg" alt="The Pawn">
+                                    <div class="project-card-content">
+                                        <div class="tag-row"><span class="tag">Video Project</span><span class="meta-pill">Storytelling</span></div>
+                                        <h3>The Pawn</h3>
+                                        <p>A crime drama short centered on strategy, revenge, and shifting power dynamics through cinematic staging.</p>
+                                        <div class="link-row"><a class="project-link" href="projects/video-project1.html">Open case study</a></div>
+                                    </div>
+                                </article>
+                                <article class="project-card">
+                                    <img src="assets/images/video-project2.png" alt="COVID-19 Employment Video">
+                                    <div class="project-card-content">
+                                        <div class="tag-row"><span class="tag">Video Project</span><span class="meta-pill">Research Video</span></div>
+                                        <h3>COVID-19 Employment Study</h3>
+                                        <p>A research-driven video presentation translating survey findings into a clear public-facing narrative.</p>
+                                        <div class="link-row"><a class="project-link" href="projects/video-project2.html">Open case study</a></div>
+                                    </div>
+                                </article>
+                                <article class="project-card">
+                                    <img src="assets/images/video-project3.png" alt="The Evolution of China Under the CPC">
+                                    <div class="project-card-content">
+                                        <div class="tag-row"><span class="tag">Video Project</span><span class="meta-pill">Historical Narrative</span></div>
+                                        <h3>The Evolution of China Under the CPC</h3>
+                                        <p>A historical video project built around archival material, timeline storytelling, and voice-led structure.</p>
+                                        <div class="link-row"><a class="project-link" href="projects/video-project3.html">Open case study</a></div>
+                                    </div>
+                                </article>
+                                <article class="project-card">
+                                    <img src="assets/images/video-project4.png" alt="Breaking the Cycle">
+                                    <div class="project-card-content">
+                                        <div class="tag-row"><span class="tag">Video Project</span><span class="meta-pill">Drama</span></div>
+                                        <h3>Breaking the Cycle</h3>
+                                        <p>A psychological drama using reference, humor, and social critique to discuss modern pressure and involution.</p>
+                                        <div class="link-row"><a class="project-link" href="projects/video-project4.html">Open case study</a></div>
+                                    </div>
+                                </article>
+                                <article class="project-card">
+                                    <img src="assets/images/photography-project1.JPG" alt="Camera Photography">
+                                    <div class="project-card-content">
+                                        <div class="tag-row"><span class="tag">Photography</span><span class="meta-pill">Composition</span></div>
+                                        <h3>Camera Photography</h3>
+                                        <p>A still-image collection focused on architecture, landscape, framing, and atmosphere through DSLR photography.</p>
+                                        <div class="link-row"><a class="project-link" href="projects/photography-project1.html">Open case study</a></div>
+                                    </div>
+                                </article>
+                                <article class="project-card">
+                                    <img src="assets/images/photography-project2.JPG" alt="Drone Photography">
+                                    <div class="project-card-content">
+                                        <div class="tag-row"><span class="tag">Photography</span><span class="meta-pill">Aerial</span></div>
+                                        <h3>Drone Photography</h3>
+                                        <p>Aerial work exploring scale, terrain, and spatial rhythm through drone-based landscape capture.</p>
+                                        <div class="link-row"><a class="project-link" href="projects/photography-project2.html">Open case study</a></div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+
+                        <div data-tab-panel="impact" hidden>
+                            <div class="project-grid">
+                                <article class="project-card">
+                                    <img src="assets/images/volunteer-project1.JPG" alt="Student Union Photography Coordinator">
+                                    <div class="project-card-content">
+                                        <div class="tag-row"><span class="tag">Community</span><span class="meta-pill">Operations</span></div>
+                                        <h3>Student Union Photography Coordinator</h3>
+                                        <p>Campus documentation and event support work shaped by visual communication, coordination, and steady delivery under pressure.</p>
+                                        <div class="link-row"><a class="project-link" href="projects/volunteer-project1.html">Open case study</a></div>
+                                    </div>
+                                </article>
+                                <article class="project-card">
+                                    <img src="assets/images/volunteer-project2.jpg" alt="Science Teacher at Beijing Public Elementary School">
+                                    <div class="project-card-content">
+                                        <div class="tag-row"><span class="tag">Community</span><span class="meta-pill">Teaching</span></div>
+                                        <h3>Science Teacher</h3>
+                                        <p>Interactive science teaching that turns abstract topics into participatory learning through experiments and group activities.</p>
+                                        <div class="link-row"><a class="project-link" href="projects/volunteer-project2.html">Open case study</a></div>
+                                    </div>
+                                </article>
+                                <article class="project-card">
+                                    <img src="assets/images/volunteer-project3.jpg" alt="Library Committee Member">
+                                    <div class="project-card-content">
+                                        <div class="tag-row"><span class="tag">Community</span><span class="meta-pill">Service Design</span></div>
+                                        <h3>Library Committee Member</h3>
+                                        <p>A service and programming role focused on cultural events, user feedback, and improving the student library experience.</p>
+                                        <div class="link-row"><a class="project-link" href="projects/volunteer-project3.html">Open case study</a></div>
+                                    </div>
+                                </article>
+                                <article class="project-card">
+                                    <img src="assets/images/award-project1.jpg" alt="National Digital Media Technology Competition">
+                                    <div class="project-card-content">
+                                        <div class="tag-row"><span class="tag">Award</span><span class="meta-pill">Competition</span></div>
+                                        <h3>National Digital Media Technology Competition</h3>
+                                        <p>Regional recognition for translating research on graduate employment into a strong digital media presentation.</p>
+                                        <div class="link-row"><a class="project-link" href="projects/award-project1.html">Open case study</a></div>
+                                    </div>
+                                </article>
+                                <article class="project-card">
+                                    <img src="assets/images/award-project2.jpg" alt="Youth Innovation Beijing Competition">
+                                    <div class="project-card-content">
+                                        <div class="tag-row"><span class="tag">Award</span><span class="meta-pill">Policy Research</span></div>
+                                        <h3>Youth Innovation Beijing Competition</h3>
+                                        <p>Challenge Cup recognition for a youth science and technology project examining graduate employment trends.</p>
+                                        <div class="link-row"><a class="project-link" href="projects/award-project2.html">Open case study</a></div>
+                                    </div>
+                                </article>
+                                <article class="project-card">
+                                    <img src="assets/images/award-project3.jpg" alt="OSP-Oxbridge Summer School">
+                                    <div class="project-card-content">
+                                        <div class="tag-row"><span class="tag">Award</span><span class="meta-pill">Innovation</span></div>
+                                        <h3>OSP-Oxbridge Summer School</h3>
+                                        <p>An interdisciplinary team project on PV module degradation that connected technical investigation with business framing.</p>
+                                        <div class="link-row"><a class="project-link" href="projects/award-project3.html">Open case study</a></div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="impact">
+                <div class="container">
+                    <div class="section-heading">
+                        <div class="eyebrow">Approach</div>
+                        <h2>Why the non-game work still matters.</h2>
+                        <p>The surrounding projects are not noise. They explain how I observe users, teach ideas, communicate visually, and operate across different production contexts.</p>
+                    </div>
+                    <div class="section-card">
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-label">Interactive Thinking</div>
+                                <div>
+                                    <h3>Games are the center of gravity.</h3>
+                                    <p>My portfolio leads with systems, mechanics, and interactive narrative because that is the work I want to deepen professionally.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-label">Technical Range</div>
+                                <div>
+                                    <h3>Software and research sharpen implementation discipline.</h3>
+                                    <p>They show I can handle structured logic, data-heavy work, and system design beyond presentation-level prototypes.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-label">Communication</div>
+                                <div>
+                                    <h3>Media, volunteer work, and awards prove delivery under real constraints.</h3>
+                                    <p>That range helps when a project needs design sense, technical follow-through, and public-facing clarity at the same time.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section" id="contact">
+                <div class="container">
+                    <div class="contact-panel">
+                        <div class="contact-copy">
+                            <div class="eyebrow">Contact</div>
+                            <h2>Looking for a designer who can also build?</h2>
+                            <p>I am most interested in work that connects game design with technical execution: gameplay prototyping, systems implementation, level scripting, interaction design, and cross-disciplinary production.</p>
+                            <div class="hero-actions">
+                                <a class="button" href="mailto:jasonwang792@gmail.com">Email me</a>
+                                <a class="button-secondary" href="https://github.com/harrypotter9914" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            </div>
+                        </div>
+                        <div class="contact-list">
+                            <div class="contact-item">
+                                <span>Email</span>
+                                <strong>jasonwang792@gmail.com</strong>
+                            </div>
+                            <div class="contact-item">
+                                <span>Phone</span>
+                                <strong>+86 136 8101 2656</strong>
+                            </div>
+                            <div class="contact-item">
+                                <span>Focus</span>
+                                <strong>Game Designer & Technical Developer</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container footer-card">
+                <span>Designed and developed by Yibo Wang.</span>
+                <span>Updated 2026.</span>
             </div>
-        </div>
-
-        <!-- Software Projects -->
-        <div class="tab-content" id="software-projects" style="display:none;">
-            <h3>Software Projects</h3>
-            <div class="portfolio-items">
-                <!-- Software Project 1 -->
-                <div class="portfolio-item">
-                    <img src="images/software-project1.png" alt="Software Project 1">
-                    <h3>High-Speed Rail Information Management System</h3>
-                    <p style="min-height: 100px; display: flex; align-items: center; text-align: center;">The High-Speed Rail Information Management System (HSW Management System), developed in Java, includes features such as train schedule management, passenger information management, and ticketing. It also offers a user-friendly graphical interface (GUI). In essence, the system integrates modern software development practices, including object-oriented programming, database management, and GUI design.</p>
-                    <a href="software-project1.html" class="btn">Learn More</a>
-                </div>
-                <!-- Software Project 2 -->
-                <div class="portfolio-item">
-                    <img src="images/software-project2.png" alt="Software Project 2">
-                    <h3>Handwritten Chinese Character Recognition System</h3>
-                    <p>Developed in Python, this system efficiently recognizes handwritten Chinese characters using image processing and neural networks. It supports image and direct handwriting inputs, processes them through advanced algorithms for noise reduction and sharpening, and uses a deep learning model for accurate character identification. The output includes the recognized text and an optional voice playback, catering to diverse application needs.</p>
-                    <a href="software-project2.html" class="btn">Learn More</a>
-                </div>
-                <!-- Software Project 3 -->
-                <div class="portfolio-item">
-                    <img src="images/software-project3.png" alt="Software Project 3">
-                    <h3>GongDa SuiShouJi Android App</h3>
-                    <p>"GongDa SuiShouJi" is a streamlined Android note-taking app that combines text and image handling to boost productivity. It features intuitive options for adding, editing, and marking notes as complete. Designed with a user-friendly interface, it ensures data safety with local storage and efficient operation through image compression. This app is ideal for managing daily tasks and notes efficiently.</p>
-                    <a href="software-project3.html" class="btn">Learn More</a>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- Video Projects -->
-        <div class="tab-content" id="video-projects" style="display:none;">
-            <h3>Video Projects</h3>
-            <div class="portfolio-items">
-                <!-- Video Project 1 -->
-                <div class="portfolio-item">
-                    <img src="images/video-project1.jpg" alt="Video Project 1">
-                    <h3>The Pawn</h3>
-                    <p>In the dark world of crime, an undercover cop and a vengeful assassin play a deadly game of revenge and redemption. The cop, posing as a loyal hitman to a powerful crime boss, secretly works for the police to dismantle the criminal empire. The assassin, driven by the pain of losing her parents in a gang war, manipulates the cop to exact her own revenge. As the story unfolds, alliances are tested, and betrayals change the course of their deadly game. In the end, the cop realizes he’s been nothing more than a pawn in the assassin’s masterfully executed plan. Chess Pieces is a thrilling tale of strategy, betrayal, and vengeance.</p>
-                    <a href="video-project1.html" class="btn">Learn More</a>
-                </div>
-                <!-- Video Project 2 -->
-                <div class="portfolio-item">
-                    <img src="images/video-project2.png" alt="Video Project 2">
-                    <h3>Impact of COVID-19 on Job Hunting and Employment for Beijing College Graduates</h3>
-                    <p>This video explores how the COVID-19 pandemic has affected job-seeking behaviors and employment outcomes for graduates from Beijing's undergraduate universities. Through a combination of data analysis and survey research, it highlights shifts in employment stability, increased emphasis on professional alignment, and transitions to digital job-seeking methods. The findings provide insights into how graduates, universities, and governments can adapt to promote higher-quality employment in the post-pandemic era.</p>
-                    <a href="video-project2.html" class="btn">Learn More</a>
-                </div>
-                <!-- Video Project 3 -->
-                <div class="portfolio-item">
-                    <img src="images/video-project3.png" alt="Video Project 3">
-                    <h3>The Evolution of China Under the CPC</h3>
-                    <p>This video chronicles the transformation of China under the leadership of the Communist Party of China (CPC) from its founding in 1921 to the present. It showcases key historical milestones such as the establishment of the CPC, the Long March, the founding of the People's Republic of China, and the economic reforms starting in 1978. Through historical footage and narrative, the video celebrates the CPC's role in shaping modern China and highlights the country's progress towards rejuvenation and modernization.</p>
-                    <a href="video-project3.html" class="btn">Learn More</a>
-                </div>
-                <!-- Video Project 4 -->
-                <div class="portfolio-item">
-                    <img src="images/video-project4.png" alt="Video Project 4">
-                    <h3>Breaking the Cycle</h3>
-                    <p>In this thought-provoking psychological drama, we pay homage to three iconic moments in Chinese media: the viral Huaqiang buying melon, Jie Ge's refusal, and In the Name of the People. The video explores the pressures and struggles of modern life, tackling the concept of "involution" with sharp wit and humor. Through layered performances and emotional depth, it challenges societal expectations, offering a refreshing perspective on the pursuit of success and happiness.</p>
-                    <a href="video-project4.html" class="btn">Learn More</a>
-                </div>
-            </div>
-        </div>
-		
-		<!-- Photography Projects -->
-		<div class="tab-content" id="photography-projects" style="display:none;">
-		    <h3>Photography projects</h3>
-		    <div class="portfolio-items">
-				<!-- Photography project 1 -->
-				<div class="portfolio-item">
-				    <img src="images/photography-project1.JPG" alt="Photography project 1">
-				    <h3>Camera Photography</h3>
-				    <p>This photography collection features ancient architecture and nature, captured using the Canon EOS R7. The camera’s exceptional detail and image quality highlight the beauty and intricacies of both the historical structures and the natural landscapes.</p>
-				    <a href="photography-project1.html" class="btn">Learn More</a>
-				</div>
-		        <!-- Photography project 2 -->
-		        <div class="portfolio-item">
-		            <img src="images/photography-project2.JPG" alt="Photography project 2">
-		            <h3>Drone Photography</h3>
-		            <p>This drone photography collection focuses on nature, captured using the DJI Mini 3 Pro. The drone’s high-quality imaging capabilities provide stunning aerial views, showcasing the vastness and beauty of the natural world from unique perspectives.</p>
-		            <a href="photography-project2.html" class="btn">Learn More</a>
-		        </div>
-		    </div>
-		</div>
+        </footer>
     </div>
-</section>
 
-	<!-- Research & Innovation Section -->
-	<section id="research" class="section research">
-	    <div class="container">
-	        <h2>Research & Innovation</h2>
-	        <div class="portfolio-items">
-	            <!-- Research Project 1 -->
-	            <div class="portfolio-item">
-	                <img src="images/research-project1.png" alt="Research Project 1">
-	                <h3>Portable Blood Pressure Monitor Based on Deep Learning</h3>
-	                <p>This project focuses on designing a smart bracelet for non-invasive blood pressure monitoring using PPG signals and deep learning algorithms. By integrating LSTM models and Bluetooth transmission, the device provides real-time health tracking, displaying results on a mobile app. The system enhances accessibility to blood pressure monitoring, offering a portable, efficient, and cost-effective solution for users.</p>
-	                <a href="research-project1.html" class="btn">Learn More</a>
-	            </div>
-	            <!-- Research Project 2 -->
-	            <div class="portfolio-item">
-	                <img src="images/research-project2.png" alt="Research Project 2">
-	                <h3>Auto-generation of certain featured live models based on Stable Diffusion and THA3</h3>
-	                <p>This project focuses on generating animated avatars using Stable Diffusion and THA3 to create customizable, motion-capturable 2D characters. By refining AI-generated images with background removal and structural adjustments, we enable seamless avatar animation. The goal is to make high-quality virtual hosts more accessible, reducing production costs for streaming, gaming, and digital entertainment.</p>
-	                <a href="research-project2.html" class="btn">Learn More</a>
-	            </div>
-	            <!-- Research Project 3 -->
-	            <div class="portfolio-item">
-	                <img src="images/research-project3.png" alt="Research Project 3">
-	                <h3>A composition analysis and identification model of ancient glass products</h3>
-	                <p>This project, created for the China National Mathematical Modeling Competition, analyzes and classifies ancient Chinese glass artifacts. Using statistical analysis, predictive modeling, and clustering, we assess chemical compositions before and after weathering, aiding artifact classification and historical preservation.</p>
-	                <a href="research-project3.html" class="btn">Learn More</a>
-	            </div>
-	        </div>
-	    </div>
-	</section>
-	
-	<!-- Community Impact (Volunteer) Section -->
-	<section id="community-impact" class="section community-impact">
-	    <div class="container">
-	        <h2>Community Impact (Volunteer)</h2>
-	        <div class="portfolio-items">
-	            <!-- Volunteer Project 1 -->
-	            <div class="portfolio-item">
-	                <img src="images/volunteer-project1.JPG" alt="Volunteer Project 1">
-	                <h3>Student Union Photography Coordinator & Summer Camp Volunteer</h3>
-	                <p>As the photography lead for campus events and a summer camp volunteer, I directed visual documentation and promotion for student activities and admissions programs. Over two years, I captured and edited 2,000+ event materials (including book clubs, birthday events, and three summer camps), enhancing the visual impact of promotional content. I also coordinated check-in processes, proctoring, ensuring seamless experiences. The materials were featured on the official admissions website.</p>
-	                <a href="volunteer-project1.html" class="btn">Learn More</a>
-	            </div>
-	            <!-- Volunteer Project 2 -->
-	            <div class="portfolio-item">
-	                <img src="images/volunteer-project2.jpg" alt="Volunteer Project 2">
-	                <h3>Science Teacher at Beijing Public Elementary School</h3>
-	                <p>I designed and taught interactive science courses for elementary students, transforming abstract concepts into hands-on experiments like “Balloon Rocket Challenges” and “Plant Growth Diaries.” By organizing team-based “Science Challenges,” I boosted group completion rates from 60% to 90%. This experience deepened my understanding of leveraging design thinking to ignite curiosity.</p>
-	                <a href="volunteer-project2.html" class="btn">Learn More</a>
-	            </div>
-	            <!-- Volunteer Project 3 -->
-	            <div class="portfolio-item">
-	                <img src="images/volunteer-project3.jpg" alt="Volunteer Project 3">
-	                <h3>Library Committee Member at Beijing University of Technology</h3>
-	                <p>During my two-year term, I curated 10+ book-sharing events and writing competitions, optimized borrowing policies, and extended library hours, increasing weekly visits by 35%. The “Themed Booklist” feature I proposed—based on student surveys—was adopted as a permanent service. This role taught me to balance creativity and practicality in building inclusive cultural spaces.</p>
-	                <a href="volunteer-project3.html" class="btn">Learn More</a>
-	            </div>
-	        </div>
-	    </div>
-	</section>
-
-	<!-- Awards & Leadership Section -->
-	<section id="award" class="section award">
-	    <div class="container">
-	        <h2>Awards & Leadership</h2>
-	        <div class="portfolio-items">
-	            <!-- Award Project 1 -->
-	            <div class="portfolio-item">
-	                <img src="images/award-project1.jpg" alt="Award Project 1">
-	                <h3>Third Prize at the National Digital Media Technology Competition (North China Region)</h3>
-	                <p>We received Third Prize in the 11th National College Digital Media Technology and Creative Competition (North China Regional Contest) for our project "Impact of the COVID-19 Pandemic on Employment of Graduates from Ordinary Universities in Beijing." This study explores employment challenges and adaptation strategies in the post-pandemic era.
-						<br><br>
-						The award-winning video presentation is featured as the second project in the OtherProject VideoProject collection.</p>
-	                <a href="award-project1.html" class="btn">Learn More</a>
-	            </div>
-	            <!-- Award Project 2 -->
-	            <div class="portfolio-item">
-	                <img src="images/award-project2.jpg" alt="Award Project 2">
-	                <h3>Second Prize at "Youth Innovation Beijing" Competition</h3>
-	                <p>Our project, "Impact of the COVID-19 Pandemic on Employment of Graduates from Ordinary Universities in Beijing," was awarded Second Prize in the "Youth Innovation Beijing" 2023 Challenge Cup competition under the "Youth Science and Technology Top Ten" Red Special Project category. This research investigates the pandemic's influence on graduate employment trends and policy implications.
-						<br><br>
-						The winning video presentation is the second project in the OtherProject VideoProject collection.</p>
-	                <a href="award-project2.html" class="btn">Learn More</a>
-	            </div>
-	            <!-- Award Project 3 -->
-	            <div class="portfolio-item">
-	                <img src="images/award-project3.jpg" alt="Award Project 3">
-	                <h3>OSP-Oxbridge Summer School</h3>
-	                <p>As part of the OSP-Oxbridge Summer School, our team developed SunGuard, a project addressing photovoltaic (PV) module degradation in solar energy. Guided by Professors Colin Openshaw, Alan Price, and John Hoffmire, we explored cultural integration, innovation, and business strategy. Using EL imaging and thermography, we proposed solutions to enhance solar panel efficiency, earning the Best Presentation award for our work.</p>
-	                <a href="award-project3.html" class="btn">Learn More</a>
-	            </div>
-	        </div>
-	    </div>
-	</section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>If you have any questions or would like to collaborate, feel free to reach out!</p>
-            <ul>
-                <li>Email: jasonwang792@gmail.com</li>
-				<li>Phone Number: +8613681012656</li>
-                <li>GitHub: <a href="https://github.com/harrypotter9914">Link</a></li>
-            </ul>
-        </div>
-    </section>
-
-    <!-- Back to Top Button -->
-    <div id="back-to-top">
-        <button>&uarr; Top</button>
-    </div>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 [Yibo Wang]. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+    <button class="back-to-top" type="button" aria-label="Back to top" data-back-to-top>↑</button>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
+
+
