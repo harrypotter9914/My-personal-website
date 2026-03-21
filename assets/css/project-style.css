@@ -747,21 +747,34 @@ footer {
 }
 
 #imageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: min(100%, 1120px);
+    max-height: calc(100vh - 2rem);
+    overflow: hidden;
 }
 
 .modal-content {
-    width: 100%;
+    display: block;
+    width: auto;
+    max-width: 100%;
     max-height: calc(100vh - 2rem);
     object-fit: contain;
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-strong);
-    transform-origin: center top;
-    transition: transform 0.2s ease;
+    transition: width 0.2s ease, height 0.2s ease;
 }
 
 .modal.is-zoomed #imageContainer {
+    align-items: flex-start;
+    justify-content: flex-start;
     overflow: auto;
+}
+
+.modal.is-zoomed .modal-content {
+    max-width: none;
+    max-height: none;
 }
 
 @media (max-width: 980px) {
