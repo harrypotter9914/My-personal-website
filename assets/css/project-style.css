@@ -753,6 +753,13 @@ footer {
     width: min(100%, 1120px);
     max-height: calc(100vh - 2rem);
     overflow: hidden;
+    overscroll-behavior: contain;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+#imageContainer::-webkit-scrollbar {
+    display: none;
 }
 
 .modal-content {
@@ -764,18 +771,27 @@ footer {
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-strong);
     transition: width 0.2s ease, height 0.2s ease;
+    user-select: none;
+    -webkit-user-drag: none;
 }
 
 .modal.is-zoomed #imageContainer {
     align-items: flex-start;
     justify-content: flex-start;
     overflow: auto;
+    touch-action: none;
+    cursor: grab;
+}
+
+.modal.is-zoomed #imageContainer.is-dragging {
+    cursor: grabbing;
 }
 
 .modal.is-zoomed .modal-content {
     max-width: none;
     max-height: none;
 }
+
 
 @media (max-width: 980px) {
     .project-hero-card,

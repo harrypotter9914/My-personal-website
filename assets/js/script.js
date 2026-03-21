@@ -312,6 +312,20 @@ function initLegacyLightbox() {
     let zoom = 1;
     let baseWidth = 0;
     let baseHeight = 0;
+    let activePointerId = null;
+    let dragStartX = 0;
+    let dragStartY = 0;
+    let dragStartScrollLeft = 0;
+    let dragStartScrollTop = 0;
+    let isDragging = false;
+    let movedDuringDrag = false;
+    let lastTapTime = 0;
+    let lastTapX = 0;
+    let lastTapY = 0;
+
+    legacyImage.setAttribute("draggable", "false");
+
+    const clampZoom = (value) => Math.max(1, Math.min(3, value));
 
     const syncBaseSize = () => {
         if (!legacyImage.src) {
@@ -346,6 +360,24 @@ function initLegacyLightbox() {
         }
 
         legacyModal.classList.toggle("is-zoomed", zoom > 1);
+        legacyContainer.classList.toggle("is-draggable", zoom > 1);
+    };
+
+    const setZoom = (nextZoom, resetScroll = false) => {
+        zoom = clampZoom(nextZoom);
+        applyZoom();
+
+        if (zoom === 1 || resetScroll) {
+            legacyContainer.scrollTop = 0;
+            legacyContainer.scrollLeft = 0;
+        }
+    };
+
+    const resetInteraction = () => {
+        activePointerId = null;
+        isDragging = false;
+        movedDuringDrag = false;
+        legacyContainer.classList.remove("is-dragging");
     };
 
     const closeLegacyModal = () => {
@@ -354,27 +386,28 @@ function initLegacyLightbox() {
         zoom = 1;
         baseWidth = 0;
         baseHeight = 0;
-        applyZoom();
-        legacyContainer.scrollTop = 0;
-        legacyContainer.scrollLeft = 0;
+        lastTapTime = 0;
+        setZoom(1, true);
+        resetInteraction();
     };
 
     const openLegacyModal = (image) => {
         if (image.dataset.noLightbox === "true") {
             return;
         }
+
         legacyImage.src = image.getAttribute("src") || "";
         legacyImage.alt = image.getAttribute("alt") || "";
         legacyModal.style.display = "flex";
         body.classList.add("lightbox-open");
         zoom = 1;
+        lastTapTime = 0;
+        resetInteraction();
 
         const initializeView = () => {
             requestAnimationFrame(() => {
                 syncBaseSize();
-                applyZoom();
-                legacyContainer.scrollTop = 0;
-                legacyContainer.scrollLeft = 0;
+                setZoom(1, true);
             });
         };
 
@@ -408,13 +441,96 @@ function initLegacyLightbox() {
         }
     });
 
-    legacyImage.addEventListener("click", () => {
-        zoom = zoom === 1 ? 1.8 : 1;
-        applyZoom();
-        if (zoom > 1) {
-            legacyContainer.scrollTop = 0;
-            legacyContainer.scrollLeft = 0;
+    legacyContainer.addEventListener("pointerdown", (event) => {
+        if (legacyModal.style.display !== "flex") {
+            return;
         }
+
+        if (event.pointerType === "mouse" && event.button !== 0) {
+            return;
+        }
+
+        if (event.pointerType === "mouse" && zoom <= 1) {
+            return;
+        }
+
+        activePointerId = event.pointerId;
+        dragStartX = event.clientX;
+        dragStartY = event.clientY;
+        dragStartScrollLeft = legacyContainer.scrollLeft;
+        dragStartScrollTop = legacyContainer.scrollTop;
+        movedDuringDrag = false;
+        isDragging = zoom > 1;
+
+        if (isDragging) {
+            legacyContainer.classList.add("is-dragging");
+            if (legacyContainer.setPointerCapture) {
+                legacyContainer.setPointerCapture(event.pointerId);
+            }
+            event.preventDefault();
+        }
+    });
+
+    legacyContainer.addEventListener("pointermove", (event) => {
+        if (!isDragging || activePointerId !== event.pointerId) {
+            return;
+        }
+
+        const deltaX = event.clientX - dragStartX;
+        const deltaY = event.clientY - dragStartY;
+
+        if (Math.abs(deltaX) > 3 || Math.abs(deltaY) > 3) {
+            movedDuringDrag = true;
+        }
+
+        legacyContainer.scrollLeft = dragStartScrollLeft - deltaX;
+        legacyContainer.scrollTop = dragStartScrollTop - deltaY;
+        event.preventDefault();
+    });
+
+    const finishPointerInteraction = (event) => {
+        if (activePointerId !== event.pointerId) {
+            return;
+        }
+
+        if (isDragging && legacyContainer.releasePointerCapture) {
+            try {
+                legacyContainer.releasePointerCapture(event.pointerId);
+            } catch (error) {
+                // Ignore missing capture on older browsers.
+            }
+        }
+
+        const isTouchLike = event.pointerType && event.pointerType !== "mouse";
+        const wasTap = isTouchLike && !movedDuringDrag;
+        resetInteraction();
+
+        if (!wasTap) {
+            return;
+        }
+
+        const now = Date.now();
+        const isDoubleTap = now - lastTapTime < 320
+            && Math.abs(event.clientX - lastTapX) < 28
+            && Math.abs(event.clientY - lastTapY) < 28;
+
+        if (isDoubleTap) {
+            setZoom(zoom === 1 ? 1.8 : 1, zoom === 1);
+            lastTapTime = 0;
+            return;
+        }
+
+        lastTapTime = now;
+        lastTapX = event.clientX;
+        lastTapY = event.clientY;
+    };
+
+    legacyContainer.addEventListener("pointerup", finishPointerInteraction);
+    legacyContainer.addEventListener("pointercancel", () => {
+        resetInteraction();
+    });
+    legacyContainer.addEventListener("dragstart", (event) => {
+        event.preventDefault();
     });
 
     legacyModal.addEventListener("wheel", (event) => {
@@ -423,17 +539,29 @@ function initLegacyLightbox() {
         }
 
         event.preventDefault();
-        zoom = Math.max(1, Math.min(3, zoom + (event.deltaY < 0 ? 0.15 : -0.15)));
-        applyZoom();
-    }, { passive: false });
-
-    window.addEventListener("resize", () => {
-        if (legacyModal.style.display !== "flex" || zoom > 1) {
+        const nextZoom = clampZoom(zoom + (event.deltaY < 0 ? 0.15 : -0.15));
+        if (nextZoom === zoom) {
             return;
         }
 
+        setZoom(nextZoom);
+    }, { passive: false });
+
+    window.addEventListener("resize", () => {
+        if (legacyModal.style.display !== "flex") {
+            return;
+        }
+
+        const currentZoom = zoom;
+        zoom = 1;
         syncBaseSize();
+        zoom = currentZoom;
         applyZoom();
+
+        if (zoom === 1) {
+            legacyContainer.scrollTop = 0;
+            legacyContainer.scrollLeft = 0;
+        }
     });
 
     window.openModal = openLegacyModal;
