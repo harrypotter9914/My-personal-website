@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzlehand | Yibo Wang</title>
+    <meta name="description" content="Puzzlehand is Yibo Wang's bachelor's thesis: a controller-free VR action-adventure built in Unity with HTC Vive and Noitom Hi5 gloves.">
+    <link rel="stylesheet" href="../assets/css/project-style.css">
+</head>
+<body data-case-study="full" class="project-page project-kind-showcase project-title-long">
+    <header>
+        <div class="container">
+            <div>
+                <h1 class="logo">Yibo Wang</h1>
+                <p class="header-project-label">Bachelor's Thesis Case Study</p>
+            </div>
+            <nav><ul><li><a href="../index.html#featured">Back to Home</a></li></ul></nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="project-hero">
+            <div class="container">
+                <div class="project-hero-card">
+                    <div class="project-hero-copy">
+                        <p class="project-kicker">Natural-Interaction VR Action Adventure</p>
+                        <h1>Puzzlehand</h1>
+                        <p class="project-summary">A controller-free VR action-adventure that turns the player's hands into the movement, climbing, magic, combat, and puzzle interface. Built as my Bachelor of Engineering thesis, the project combines Unity, HTC Vive, and Noitom Hi5 2.0 gloves in three progressively layered levels.</p>
+                        <div class="project-tag-row">
+                            <span class="project-tag">Unity</span>
+                            <span class="project-tag">SteamVR</span>
+                            <span class="project-tag">Noitom Hi5 2.0</span>
+                            <span class="project-tag">HTC Vive</span>
+                        </div>
+                        <div class="project-action-row">
+                            <a class="project-pill" href="#systems">Interaction Systems</a>
+                            <a class="project-pill" href="#levels">Level Design</a>
+                            <a class="project-pill" href="#testing">Hardware Testing</a>
+                        </div>
+                    </div>
+                    <div class="project-metric-grid">
+                        <div class="project-metric"><span>Engine</span><strong>Unity</strong></div>
+                        <div class="project-metric"><span>Hardware</span><strong>HTC Vive + Hi5 Gloves</strong></div>
+                        <div class="project-metric"><span>Role</span><strong>Design + Programming</strong></div>
+                        <div class="project-metric"><span>Format</span><strong>Bachelor's Thesis, 2025</strong></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section project-notes-section">
+            <div class="container notes-grid">
+                <article class="case-card note-card">
+                    <p class="case-label">01 / Project Intent</p>
+                    <h2>Remove the controller and make physical gestures the game's core language.</h2>
+                    <div class="overview-grid">
+                        <div>
+                            <p>Puzzlehand explores how a VR game changes when grabbing, pulling, climbing, casting, and operating machinery are performed through tracked hands instead of handheld controllers. The goal was not to add gesture input on top of a conventional game, but to design traversal and puzzles around the affordances of natural hand movement.</p>
+                            <p>I designed and programmed the gameplay, interaction systems, and three-level progression. Visual and audio assets were third-party or production resources; they are not presented as my original art.</p>
+                        </div>
+                        <div class="callout-card">
+                            <strong>Core design question</strong>
+                            <p>Can one consistent hand-based interaction language support locomotion, traversal, combat, resource decisions, and environmental puzzles without relying on a controller?</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="systems" class="case-card note-card">
+                    <p class="case-label">02 / Interaction Systems</p>
+                    <h2>Every major verb begins with the player's hands.</h2>
+                    <div class="detail-grid">
+                        <article class="detail-card"><h3>Hand-drag Locomotion</h3><p>Players press and drag against the virtual ground to propel themselves. Motion thresholds, direction sampling, gravity, and inertia smoothing translate hand movement into stable traversal.</p></article>
+                        <article class="detail-card"><h3>Two-hand Climbing</h3><p>Grabbable surfaces switch the character between grounded and climbing states. Releasing either hand transfers tracked displacement into body movement while collision logic prevents invalid motion.</p></article>
+                        <article class="detail-card"><h3>Magic, Combat & Resources</h3><p>Gesture-cast abilities connect ranged interaction, enemy pressure, and environmental problem solving. Resource limits make magic a traversal and planning decision rather than unlimited spectacle.</p></article>
+                        <article class="detail-card"><h3>Physical Mechanisms</h3><p>Levers, buttons, rotating cranks, keycard validators, and joystick-style controls reuse consistent grabbing, collision, rotation, and state-change rules.</p></article>
+                    </div>
+                    <div class="portfolio-flow">
+                        <figure class="portfolio-sheet"><div class="portfolio-frame"><img src="../assets/images/puzzlehand-mechanisms-a.jpg" alt="Puzzlehand interaction mechanism designs" onclick="openModal(this)"></div><figcaption>Mechanism studies for physical puzzle interactions and feedback states.</figcaption></figure>
+                        <figure class="portfolio-sheet"><div class="portfolio-frame"><img src="../assets/images/puzzlehand-mechanisms-b.jpg" alt="Puzzlehand VR interaction mechanisms" onclick="openModal(this)"></div><figcaption>Additional interactable forms built from the same hand-driven input rules.</figcaption></figure>
+                    </div>
+                </article>
+
+                <article id="levels" class="case-card note-card">
+                    <p class="case-label">03 / Level Design</p>
+                    <h2>Three levels teach, combine, and pressure-test the interaction vocabulary.</h2>
+                    <div class="portfolio-flow">
+                        <figure class="portfolio-sheet portfolio-sheet-lead"><div class="portfolio-frame"><img src="../assets/images/puzzlehand-level-1.png" alt="Puzzlehand level one design diagram" onclick="openModal(this)"></div><figcaption><strong>Level 1 — Foundations.</strong> Introduces hand-drag movement, basic climbing, magic management, and a keycard-validator sequence in controlled spaces.</figcaption></figure>
+                        <figure class="portfolio-sheet"><div class="portfolio-frame"><img src="../assets/images/puzzlehand-level-2.png" alt="Puzzlehand level two design diagram" onclick="openModal(this)"></div><figcaption><strong>Level 2 — Mechanical Challenge.</strong> Extends traversal into ceiling climbing and combines validators, physical mechanisms, and enemy interference.</figcaption></figure>
+                        <figure class="portfolio-sheet"><div class="portfolio-frame"><img src="../assets/images/puzzlehand-level-3.png" alt="Puzzlehand level three design diagram" onclick="openModal(this)"></div><figcaption><strong>Level 3 — Combined Mastery.</strong> Layers multi-step mechanisms, advanced gesture use, traversal decisions, and combat pressure into a final integrated route.</figcaption></figure>
+                    </div>
+                </article>
+
+                <article id="implementation" class="case-card note-card">
+                    <p class="case-label">04 / Technical Implementation</p>
+                    <h2>Modular controllers keep gesture data, player state, collision, and feedback readable.</h2>
+                    <div class="overview-grid">
+                        <div>
+                            <p>The project separates tracking input from gameplay state changes. Hand position and gesture data feed movement and interaction controllers; those controllers then coordinate gravity, CharacterController collision, climbing state, object constraints, and visual feedback.</p>
+                            <p>This structure made the same low-level grabbing and motion rules reusable across traversal, rotating mechanisms, validators, and combat interactions, while allowing each object to expose its own state and completion logic.</p>
+                        </div>
+                        <div class="callout-card"><strong>Implementation priorities</strong><p>Stable movement, reusable interaction components, visible state changes, and hardware calibration that could be tested one behavior at a time.</p></div>
+                    </div>
+                    <div class="portfolio-flow">
+                        <figure class="portfolio-sheet"><div class="portfolio-frame"><img src="../assets/images/puzzlehand-movement-code.png" alt="Puzzlehand movement and gravity code" onclick="openModal(this)"></div><figcaption>Movement update logic coordinating hand-driven locomotion, gravity, and the character controller.</figcaption></figure>
+                        <figure class="portfolio-sheet"><div class="portfolio-frame"><img src="../assets/images/puzzlehand-climbing-code.png" alt="Puzzlehand climbing system code" onclick="openModal(this)"></div><figcaption>Climbing-state logic translating tracked hand displacement into controlled player movement.</figcaption></figure>
+                    </div>
+                </article>
+
+                <article id="testing" class="case-card note-card">
+                    <p class="case-label">05 / Hardware Validation</p>
+                    <h2>Each interaction was calibrated and tested on the target hardware.</h2>
+                    <div class="detail-grid">
+                        <article class="detail-card"><h3>Input Setup</h3><p>Noitom Hi5 2.0 gloves provided tracked hand input while HTC Vive supplied the headset and VR environment. Calibration aligned the physical hands, avatar hands, and interaction volumes.</p></article>
+                        <article class="detail-card"><h3>Functional Testing</h3><p>Climbing, cranks, levers, buttons, validators, and joystick interactions were tested independently before being combined inside full level routes.</p></article>
+                        <article class="detail-card"><h3>Iteration</h3><p>Thresholds, collision ranges, release behavior, and mechanism constraints were tuned to reduce accidental activation and make intended hand motion easier to read.</p></article>
+                    </div>
+                    <div class="portfolio-flow">
+                        <figure class="portfolio-sheet"><div class="portfolio-frame"><img src="../assets/images/puzzlehand-hi5-gloves.jpg" alt="Noitom Hi5 motion capture gloves used for Puzzlehand" onclick="openModal(this)"></div><figcaption>Noitom Hi5 2.0 motion-capture gloves used for hand input.</figcaption></figure>
+                        <figure class="portfolio-sheet"><div class="portfolio-frame"><img src="../assets/images/puzzlehand-htc-vive.jpg" alt="HTC Vive headset used for Puzzlehand" onclick="openModal(this)"></div><figcaption>HTC Vive target headset and tracking environment.</figcaption></figure>
+                        <figure class="portfolio-sheet"><div class="portfolio-frame"><img src="../assets/images/puzzlehand-calibration.jpg" alt="Puzzlehand hand calibration test" onclick="openModal(this)"></div><figcaption>Hand-model calibration before interaction testing.</figcaption></figure>
+                        <figure class="portfolio-sheet"><div class="portfolio-frame"><img src="../assets/images/puzzlehand-climbing-test.jpg" alt="Puzzlehand climbing interaction test" onclick="openModal(this)"></div><figcaption>Two-hand climbing test in the playable environment.</figcaption></figure>
+                        <figure class="portfolio-sheet"><div class="portfolio-frame"><img src="../assets/images/puzzlehand-crank-test.jpg" alt="Puzzlehand rotating crank interaction test" onclick="openModal(this)"></div><figcaption>Rotating crank test for constrained hand-driven mechanisms.</figcaption></figure>
+                        <figure class="portfolio-sheet"><div class="portfolio-frame"><img src="../assets/images/puzzlehand-lever-test.jpg" alt="Puzzlehand lever interaction test" onclick="openModal(this)"></div><figcaption>Lever activation and state feedback test.</figcaption></figure>
+                        <figure class="portfolio-sheet"><div class="portfolio-frame"><img src="../assets/images/puzzlehand-button-test.jpg" alt="Puzzlehand button interaction test" onclick="openModal(this)"></div><figcaption>Button collision and activation test.</figcaption></figure>
+                        <figure class="portfolio-sheet"><div class="portfolio-frame"><img src="../assets/images/puzzlehand-keycard-test.jpg" alt="Puzzlehand keycard validator interaction test" onclick="openModal(this)"></div><figcaption>Keycard placement and validator-state test.</figcaption></figure>
+                        <figure class="portfolio-sheet"><div class="portfolio-frame"><img src="../assets/images/puzzlehand-joystick-test.jpg" alt="Puzzlehand joystick interaction test" onclick="openModal(this)"></div><figcaption>Joystick-style input test using constrained hand movement.</figcaption></figure>
+                    </div>
+                </article>
+
+                <article class="case-card note-card">
+                    <p class="case-label">06 / Outcome</p>
+                    <h2>A thesis-scale project that connects interaction research to a complete playable progression.</h2>
+                    <p>Puzzlehand demonstrates my strongest working pattern: define a player-facing design question, build the underlying system, author content that teaches it, and validate the result on real hardware. The final prototype supports controller-free movement, climbing, magic, combat, physical mechanisms, and three escalating levels within one coherent gesture language.</p>
+                </article>
+            </div>
+        </section>
+
+        <div id="back-to-top"><button>&uarr; Top</button></div>
+    </main>
+
+    <footer class="project-footer"><div class="container"><p>&copy; 2026 Yibo Wang. All rights reserved.</p></div></footer>
+    <div id="imageModal" class="modal"><span class="close" onclick="closeModal()">&times;</span><div id="imageContainer"><img class="modal-content" id="modalImage" alt="Expanded Puzzlehand project image"></div></div>
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>
