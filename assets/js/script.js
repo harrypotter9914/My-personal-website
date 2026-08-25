@@ -21,14 +21,26 @@ const projectMeta = {
     },
     "game-project1.html": {
         category: "Game Project",
-        summary: "A VR library experience that turns reading, discovery, and exhibition interaction into an explorable digital space.",
-        tags: ["VR", "Interaction Design", "Spatial UX"],
+        summary: "A cross-device VR library experience built around finding, borrowing, handling, reading, and translating virtual books in an explorable space.",
+        tags: ["Unity", "OpenXR", "VRTK 4.0"],
+        metrics: [
+            ["Role", "Lead Programmer & Interaction Designer"],
+            ["Contribution", "Game Design + Programming"],
+            ["Focus", "Spatial Library Interaction"],
+            ["Devices", "PICO 4 Pro + HTC Vive"]
+        ],
         layout: "gallery"
     },
     "game-project2.html": {
         category: "Game Project",
-        summary: "A Sengoku-era action adventure built around puzzle flow, chase pressure, and clean player guidance.",
-        tags: ["Action Adventure", "Puzzle Design", "Exploration"],
+        summary: "A 3D game combining open-world exploration with a three-phase tactical combat loop built around prediction, player action, and resolution.",
+        tags: ["Unity", "C#", "State Machines"],
+        metrics: [
+            ["Role", "Team Lead & Lead Programmer"],
+            ["Contribution", "Game Design + Programming"],
+            ["Focus", "Exploration + Tactical Combat"],
+            ["Systems", "AI, Turns, Action Points, Camera"]
+        ],
         layout: "gallery"
     },
     "software-project1.html": {
@@ -739,6 +751,13 @@ function enhanceProjectPage() {
 
     const hero = document.createElement("section");
     hero.className = "project-hero";
+    const heroMetrics = meta.metrics || [
+        ["Gallery", `${galleryCount} frames`],
+        ["Video", hasVideo ? "Included" : "Not included"],
+        ["Links", resourceCount ? `${resourceCount} resources` : "No public repo"],
+        ["Focus", meta.tags[0] || meta.category]
+    ];
+
     hero.innerHTML = `
         <div class="container">
             <div class="project-hero-card">
@@ -755,10 +774,7 @@ function enhanceProjectPage() {
                     </div>
                 </div>
                 <div class="project-metric-grid">
-                    ${buildMetric("Gallery", `${galleryCount} frames`).outerHTML}
-                    ${buildMetric("Video", hasVideo ? "Included" : "Not included").outerHTML}
-                    ${buildMetric("Links", resourceCount ? `${resourceCount} resources` : "No public repo").outerHTML}
-                    ${buildMetric("Focus", meta.tags[0] || meta.category).outerHTML}
+                    ${heroMetrics.map(([label, value]) => buildMetric(label, value).outerHTML).join("")}
                 </div>
             </div>
         </div>
@@ -804,6 +820,7 @@ function enhanceProjectPage() {
             gallery.classList.add("photo-gallery");
         }
         gallery.querySelectorAll("img").forEach((image, index) => {
+            image.loading = "lazy";
             if (image.closest("figure")) {
                 return;
             }
