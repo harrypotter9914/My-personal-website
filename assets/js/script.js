@@ -9,8 +9,8 @@ const projectMeta = {
     },
     "project2.html": {
         category: "Featured Game",
-        summary: "A custom-engine action adventure mixing Metroidvania progression, dark historical world-building, and technical collaboration close to the design process.",
-        tags: ["Custom Engine", "Narrative Design", "Combat Flow"],
+        summary: "A Unity 6 Metroidvania connecting ability-gated exploration, shared-resource combat, and readable boss encounters.",
+        tags: ["Unity 6", "Level Design", "Combat Systems"],
         layout: "showcase"
     },
     "project3.html": {
