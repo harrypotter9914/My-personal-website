@@ -1,6 +1,6 @@
 # Portfolio content and presentation
 
-Updated November 3, 2026. This remains a buildless GitHub Pages website.
+Updated November 4, 2026. This remains a buildless GitHub Pages website.
 
 ## Shared design
 
@@ -13,6 +13,7 @@ Updated November 3, 2026. This remains a buildless GitHub Pages website.
 | Page | Project | Latest YouTube film | Selected / complete |
 |---|---|---|---|
 | `projects/project2.html` | Babel | `SPEH-DODZ7I` | 7 / 12 pages |
+| `projects/sky-hamster.html` | Sky Hamster | `iNOELVQz9kg` | 8 / 10 pages |
 | `projects/project1.html` | Fit to Pass | `_GRWXU7BOKU` | 8 / 10 pages |
 | `projects/project3.html` | Echo of Crash | `B0FBTVE2i0M` | 8 / 18 pages |
 
@@ -21,6 +22,8 @@ Updated November 3, 2026. This remains a buildless GitHub Pages website.
 Existing case-study URLs, additional projects, analytics ID, portrait, and contact email are retained. Puzzlehand is now under Additional Games. The current Babel project is Unity 6, not the older custom-engine description.
 
 ## Local check
+
+Babel is the wide flagship card; Sky Hamster, Fit to Pass, and Echo of Crash follow as three equally visible core projects. Each page links to its verified public repository and code guide. Sky Hamster requires Playdate hardware (not a native Windows build); its video is Simulator capture. Echo exposes a source snapshot rather than a complete Unreal project. Babel's source/build is v0.57 while its visual PDF records v0.56. The first three source PDFs were rechecked against Desktop copies and remained byte-identical on November 4.
 
 Serve the repository using any static HTTP server. Check desktop and narrow mobile layouts, the archive tabs, both portfolio editions, image enlargement and Escape-to-close, YouTube playback links, demo links, and PDF downloads.
 
