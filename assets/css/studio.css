@@ -13,4 +13,13 @@ body>header nav a{background:transparent;border:0;border-radius:4px;color:var(--
 .flagship{grid-column:1/-1;display:grid;grid-template-columns:1.4fr 1fr}.flagship .work-image{height:100%;display:flex;align-items:center;background:#111d2b}.flagship .work-image img{height:auto;aspect-ratio:16/9;object-fit:cover}.flagship .work-content{padding:32px}.flagship .work-content h3{font-size:36px}.flagship .work-content p{min-height:0}.work-number{line-height:1.6}.platform-note{font-size:13px;color:var(--muted);margin-top:18px}.next-projects{flex-wrap:wrap;gap:20px}@media(max-width:700px){.flagship{grid-template-columns:1fr}.flagship .work-content{padding:20px}.flagship .work-content h3{font-size:28px}}
 /* Show the full cover at rest; retain the original zoom feedback on hover. */
 .work-image img,.flagship .work-image img{object-fit:contain}
+/* Resume QR landing: all three destinations stay visible on phones. */
+.profile-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.profile-link{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:46px;padding:10px 18px;border:1px solid #b5c3d6;border-radius:6px;background:#fff;color:var(--ink);font-size:14px;font-weight:700;text-decoration:none;transition:background .18s,border-color .18s}
+.profile-link:hover{background:#edf2ff;border-color:var(--accent);color:var(--accent-deep)}
+.profile-link-linkedin{background:#0a66c2;border-color:#0a66c2;color:#fff}
+.profile-link-linkedin:hover{background:#084f96;border-color:#084f96;color:#fff}
+.profile-link-github{background:#172433;border-color:#172433;color:#fff}
+.profile-link-github:hover{background:#2c4057;border-color:#2c4057;color:#fff}
+@media(max-width:600px){.profile-links{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:18px}.profile-link{min-height:46px;padding:10px 7px;gap:6px;font-size:13px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
